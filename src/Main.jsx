@@ -7,7 +7,6 @@ import {
   AboutUs,
   AuthorOfTheDay,
   Search,
-  SearchResult,
   OpenAuthorComponent,
   Language,
 } from './components';
