@@ -32,5 +32,6 @@
   ],
   "devDependencies": {
     "eslint-config-airbnb": "^17.1.0"
-  }
+  },
+  "homepage": "https://aleksei-bulgak-study.github.io/RSConf-landing-page/"
 }
