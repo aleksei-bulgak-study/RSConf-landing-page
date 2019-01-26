@@ -4,7 +4,7 @@ import { withNamespaces } from 'react-i18next';
 import PropTypes from 'prop-types';
 import {
   Home, AboutUs, AuthorOfTheDay, Search, SearchResult,
-  AuthorPage, Language, OpenAuthorComponent,
+  Language, OpenAuthorComponent,
 } from './components';
 import './styles/style.css';
 import Fullist from './components/fulllist/Fullist';

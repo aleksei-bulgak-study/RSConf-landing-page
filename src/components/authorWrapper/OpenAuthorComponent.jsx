@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AuthorOfTheDay from '../authorOfTheDay/AuthorOfTheDay';
+// import AuthorPage from '../authorPage/AuthorPage';
 
 function OpenAuthorComponent({ authors, firstName, lastName }) {
   const selected = authors.filter(author => (
