@@ -26,6 +26,7 @@ i18n.addResourceBundle('en', 'translation', {
   author_of_the_day: 'Author of the day',
   author_search: 'Author Search',
   team: 'The project team',
+  authors: 'Authors',
 });
 i18n.addResourceBundle('ru', 'translation', {
   en: 'англ',
@@ -36,6 +37,7 @@ i18n.addResourceBundle('ru', 'translation', {
   author_of_the_day: 'Поэт дня',
   author_search: 'Поиск поэтов',
   team: 'Наша команда',
+  authors: 'Поэты',
 });
 i18n.addResourceBundle('by', 'translation', {
   en: 'англ',
@@ -46,6 +48,7 @@ i18n.addResourceBundle('by', 'translation', {
   author_of_the_day: 'Паэт дня',
   author_search: 'Пошук па паэтам',
   team: 'Каманда',
+  authors: 'Паэты',
 });
 
 export default i18n;

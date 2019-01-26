@@ -12,7 +12,6 @@ const Main = ({ t }) => (
   <HashRouter>
     <div className="main">
       <h1>{t('title')}</h1>
-      <Language />
       <ul className="header">
         <li>
           <NavLink exact to="/">
@@ -29,7 +28,7 @@ const Main = ({ t }) => (
           <NavLink to="/aboutus">{t('team')}</NavLink>
         </li>
         <li>
-          <NavLink to="/fulllist">Authors</NavLink>
+          <NavLink to="/fulllist">{t('authors')}</NavLink>
         </li>
       </ul>
       <div className="content">
@@ -40,7 +39,7 @@ const Main = ({ t }) => (
         <Route path="/searchResult" component={SearchResult} />
         <Route path="/fulllist" component={Fullist} />
       </div>
-      <div className="lang"><button type="button">lang</button></div>
+      <Language />
     </div>
   </HashRouter>
 );
