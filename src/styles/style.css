@@ -41,3 +41,9 @@ body {
 h2 {
   font-size: 30px;
 }
+
+.lang {
+  position:absolute;
+  top:0;
+  right:50px;
+}
