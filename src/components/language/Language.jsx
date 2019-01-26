@@ -56,7 +56,7 @@ function LanguageButton({
 }) {
   return (
     <button
-      className={isActive(language) && 'active'}
+      className={isActive(language) ? 'active' : 'default'}
       key={language}
       type="button"
       onClick={() => onClick(language)}

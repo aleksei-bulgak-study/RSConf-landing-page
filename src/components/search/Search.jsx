@@ -1,16 +1,56 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './search.css';
 
-const Search = () => (
-  <div>
-    <h2>Search</h2>
-    <p>Search</p>
-    <input type="text" />
-    <NavLink to="/searchResult">
-      <button type="submit">Search</button>
-    </NavLink>
-  </div>
-);
+import SearchResult from '../searchResult/SearchResult';
+
+class Search extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      search: '',
+      searchResult: props.authorsInfo,
+    };
+    this.searchForData = this.searchForData.bind(this);
+  }
+
+  searchForData(event) {
+    const searchValue = event.target.value;
+    this.setState({
+      search: searchValue,
+    });
+    this.filterData(searchValue);
+  }
+
+  filterData(search) {
+    const { authorsInfo } = this.props;
+    let match = [...authorsInfo];
+    if (search) {
+      const searchLowerCase = search.toLowerCase();
+      match = authorsInfo.filter(author => (
+        author.firstName.toLowerCase().includes(searchLowerCase)
+        || author.lastName.toLowerCase().includes(searchLowerCase)
+        || author.locations[0].name.toLowerCase().includes(searchLowerCase)));
+    }
+    this.setState({ searchResult: match });
+  }
+
+  render() {
+    const { search, searchResult } = this.state;
+    const { t } = this.props;
+    return (
+      <div>
+        <h2>{t('search')}</h2>
+        <input type="text" value={search} onChange={this.searchForData} />
+        <SearchResult authors={searchResult} />
+      </div>
+    );
+  }
+}
+
+Search.propTypes = {
+  t: PropTypes.func.isRequired,
+  authorsInfo: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default Search;

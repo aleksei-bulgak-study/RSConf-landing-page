@@ -7,6 +7,8 @@ import './styles/style.css';
 import Fullist from './components/fulllist/Fullist';
 import data from './data/authors.json';
 
+const SearchWrapped = withNamespaces()(Search);
+
 const Main = ({ t }) => (
   <HashRouter>
     <div className="main">
@@ -36,7 +38,10 @@ const Main = ({ t }) => (
           path="/authorOfTheDay"
           component={props => <AuthorOfTheDay {...props} authorsInfo={data} />}
         />
-        <Route path="/search" component={Search} />
+        <Route
+          path="/search"
+          component={props => <SearchWrapped {...props} authorsInfo={data} />}
+        />
         <Route path="/aboutus" component={AboutUs} />
         <Route path="/searchResult" component={SearchResult} />
         <Route path="/fulllist" component={Fullist} />
