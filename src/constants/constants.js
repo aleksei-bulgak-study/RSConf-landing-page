@@ -1,6 +1,6 @@
 const DEVELOPERS = [
   {
-    name: 'Dzmitry Tsebruk',
+    name: 'Aleksei Bulgak',
     nickname: 'aleksei-bulgak-study',
     avatar: 'https://avatars0.githubusercontent.com/u/32191501?s=400&v=4',
   },
