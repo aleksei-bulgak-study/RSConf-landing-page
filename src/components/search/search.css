@@ -1,18 +1,68 @@
-.search {
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
+  width: 1100px;
+  height: 80vh;
 }
 
-.search__title {
-  font-size: 2.5em;
-  margin-top: 10%;
-  text-align: center;
-}
-
-.search__value {
+.col,
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  margin-top: 2%;
-  font-size: 1.5em;
 }
+
+.col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.search-shape {
+  margin: 200px auto 50px;
+}
+
+.search-shape input {
+  padding: 7px 10px;
+  width: 300px;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-result {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-result .card {
+  margin: 5px auto;
+  width: 700px;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.search-result .card img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+
+.search-result .card .author-name {
+  margin: auto 50px auto;
+}
+/*# sourceMappingURL=search.css.map */

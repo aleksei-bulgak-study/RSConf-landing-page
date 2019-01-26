@@ -1,69 +1,77 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './search.css';
 
-import SearchResult from '../searchResult/SearchResult';
+const renderCard = (data) => {
+  console.log(data);
+  return (
+    <section className="search-result col">
+      <ul>
+        {data.map(({ firstName, lastName, titleImage }) => {
+          const address = `/authorPage/${firstName}/${lastName}`;
+          return (
+            <li key={address} className="card row">
+              <img alt="img" src={titleImage} />
+              <div className="row">
+                <Link
+                  className="author-name"
+                  key={firstName + lastName}
+                  to={address}
+                >
+                  { firstName }
+                  {' '}
+                  { lastName}
+                </Link>
+
+              </div>
+            </li>
+          );
+        })
+        }
+      </ul>
+    </section>
+  );
+};
 
 class Search extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      search: '',
-      searchResult: props.authorsInfo,
-    };
-    this.searchForData = this.searchForData.bind(this);
+    this.state = { searchRequest: [] };
   }
 
-  searchForData(event) {
-    const searchValue = event.target.value;
-    this.setState({
-      search: searchValue,
-    });
-    this.filterData(searchValue);
-  }
-
-  filterData(search) {
-    const { authorsInfo, language } = this.props;
-    let match = [...authorsInfo];
-    if (search) {
-      const searchLowerCase = search.toLowerCase();
-      match = authorsInfo.filter((author) => {
-        const data = author.translation[language];
-        return data.firstName.toLowerCase().includes(searchLowerCase)
-          || data.lastName.toLowerCase().includes(searchLowerCase)
-          || data.locations.toLowerCase().includes(searchLowerCase);
-      });
+  handleChange(event) {
+    const { authorsInfo } = this.props;
+    const inputValue = event.target.value.toLowerCase();
+    if (inputValue.length > 0) {
+      const arr = authorsInfo.filter(({ firstName, lastName }) => firstName.toLowerCase().search(inputValue) >= 0 || lastName.toLowerCase().search(inputValue) >= 0); // eslint-disable-line
+      this.setState({ searchRequest: arr });
+    } else {
+      this.setState({ searchRequest: [] });
     }
-    this.setState({ searchResult: match });
   }
 
   render() {
-    const { search, searchResult } = this.state;
-    const { t, language } = this.props;
+    const { searchRequest } = this.state;
     return (
-      <div className="search">
-        <label htmlFor="search__value" className="search__title">{t('search')}</label>
-        <input
-          id="search__value"
-          type="text"
-          className="search__value"
-          value={search}
-          onChange={this.searchForData}
-        />
-        <SearchResult authors={searchResult} language={language} />
+      <div className="container">
+        <div className="col">
+          <section className="search-shape">
+            <input type="text" placeholder="search author" onChange={this.handleChange.bind(this)} />
+          </section>
+          {renderCard(searchRequest)}
+        </div>
       </div>
     );
   }
 }
 
 Search.propTypes = {
-  t: PropTypes.func.isRequired,
-  authorsInfo: PropTypes.arrayOf(PropTypes.object).isRequired,
-  language: PropTypes.string,
+  authorsInfo: PropTypes.arrayOf(
+    PropTypes.object,
+  ),
 };
-
 Search.defaultProps = {
-  language: 'en',
+  authorsInfo: [],
 };
-
 export default Search;
