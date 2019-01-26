@@ -37,10 +37,6 @@ const Main = ({ t }) => (
         <li>
           <NavLink to="/fulllist">{t('authors')}</NavLink>
         </li>
-        {/*  */}
-        <li>
-          <NavLink to="/authorPage">MyAUrtosfd</NavLink>
-        </li>
       </ul>
       <div className="content">
         <Route exact path="/" component={Home} />
@@ -52,8 +48,7 @@ const Main = ({ t }) => (
         <Route path="/aboutus" component={AboutUs} />
         <Route path="/searchResult" component={SearchResult} />
         <Route path="/fulllist" component={Fullist} />
-        {/*  */}
-        <Route path="/authorPage" component={props => <AuthorPage {...props} info={data[3]} />} />
+        <Route path="/authorPage" component={AuthorPage} />
       </div>
       <Language />
     </div>
