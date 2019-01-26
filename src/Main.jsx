@@ -7,6 +7,7 @@ import {
 } from './components';
 import './styles/style.css';
 import Fullist from './components/fulllist/Fullist';
+import data from './data/authors.json';
 
 const Main = ({ t }) => (
   <HashRouter>
@@ -33,7 +34,10 @@ const Main = ({ t }) => (
       </ul>
       <div className="content">
         <Route exact path="/" component={Home} />
-        <Route path="/authorOfTheDay" component={AuthorOfTheDay} />
+        <Route
+          path="/authorOfTheDay"
+          component={props => <AuthorOfTheDay {...props} autorsInfo={data} />}
+        />
         <Route path="/search" component={Search} />
         <Route path="/aboutus" component={AboutUs} />
         <Route path="/searchResult" component={SearchResult} />
