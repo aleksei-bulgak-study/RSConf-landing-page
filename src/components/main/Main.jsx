@@ -17,11 +17,11 @@ const Main = () => (
         <li><NavLink to="/aboutus">The project team</NavLink></li>
       </ul>
       <div className="content">
-        <Route exact path="${process.env.PUBLIC_URL}/" component={Home} />
-        <Route path="${process.env.PUBLIC_URL}/AuthofTheDay" component={AuthOfTheDay} />
-        <Route path="${process.env.PUBLIC_URL}/search" component={Search} />
-        <Route path="${process.env.PUBLIC_URL}/aboutus" component={AboutUs} />
-        <Route path="${process.env.PUBLIC_URL}/author" component={Author} />
+        <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
+        <Route path={process.env.PUBLIC_URL + "/AuthofTheDay"} component={AuthOfTheDay} />
+        <Route path={process.env.PUBLIC_URL + "/search"} component={Search} />
+        <Route path={process.env.PUBLIC_URL + "/aboutus"} component={AboutUs} />
+        <Route path={process.env.PUBLIC_URL + "/author"} component={Author} />
       </div>
     </div>
   </HashRouter>
