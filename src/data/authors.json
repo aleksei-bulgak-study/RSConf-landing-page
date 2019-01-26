@@ -30,15 +30,15 @@
     "works": [
       {
         "name": "Дума а Каралю XII",
-        "dateOfPublication": null
+        "dateOfPublication": "1868"
       },
       {
-        "name": "Ваўкалака",
-        "dateOfPublication": null
+        "name": "Ваўкалак",
+        "dateOfPublication": "1870"
       },
       {
-        "name": "Ваўкалака",
-        "dateOfPublication": null
+        "name": "Старшына",
+        "dateOfPublication": "1874"
       }
     ],
     "timeline": [
@@ -109,10 +109,6 @@
       {
         "name": "Босая зорка",
         "dateOfPublication": "2001"
-      },
-      {
-        "name": "Сама пайду дарогаю, голас пашлю дуброваю: Песні матчыны з Вушаччыны",
-        "dateOfPublication": "2005"
       }
     ],
     "timeline": [
@@ -172,15 +168,11 @@
     ],
     "works": [
       {
-        "name": "Апавяданні / Змітрок Бядуля. — Мінск: Народная асвета",
+        "name": "Зборнік апавяданняў",
         "dateOfPublication": "1973"
       },
       {
-        "name": "Антология педагогической мысли Белорусской ССР",
-        "dateOfPublication": "1986"
-      },
-      {
-        "name": "Дзень добры!: вершы, казкі, апавяданні",
+        "name": "Дзень добры",
         "dateOfPublication": "1989"
       },
       {
@@ -261,7 +253,7 @@
         "dateOfPublication": "1916"
       },
       {
-        "name": "Базылішк",
+        "name": "Базылішка",
         "dateOfPublication": "1917"
       },
       {
