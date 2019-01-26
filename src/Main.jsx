@@ -3,6 +3,8 @@ import { Route, NavLink, HashRouter } from 'react-router-dom';
 import {
   Home, AboutUs, AuthorOfTheDay, Search, SearchResult,
 } from './components';
+import './styles/style.css';
+import Fullist from './components/fulllist/Fullist';
 
 const Main = () => (
   <HashRouter>
@@ -23,6 +25,9 @@ const Main = () => (
         <li>
           <NavLink to="/aboutus">The project team</NavLink>
         </li>
+        <li>
+          <NavLink to="/fulllist">Authors</NavLink>
+        </li>
       </ul>
       <div className="content">
         <Route exact path="/" component={Home} />
@@ -30,7 +35,9 @@ const Main = () => (
         <Route path="/search" component={Search} />
         <Route path="/aboutus" component={AboutUs} />
         <Route path="/searchResult" component={SearchResult} />
+        <Route path="/fulllist" component={Fullist} />
       </div>
+      <div className="lang"><button type="button">lang</button></div>
     </div>
   </HashRouter>
 );
