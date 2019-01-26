@@ -9,6 +9,7 @@ const SearchResult = ({ authors }) => (
       {
         authors.map((author) => {
           const address = `/authorPage/${author.firstName}/${author.lastName}`;
+          const text = `${author.firstName} ${author.lastName}`;
           return (
             <li key={address}>
               <Link
@@ -16,8 +17,7 @@ const SearchResult = ({ authors }) => (
                 key={author.firstName + author.lastName}
                 to={address}
               >
-                {author.firstName}
-                {author.lastName}
+                {text}
               </Link>
             </li>
           );

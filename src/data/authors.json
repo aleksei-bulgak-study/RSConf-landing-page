@@ -1,5 +1,22 @@
 [
   {
+    "translation": {
+      "en": {
+        "firstName": "Olgerd",
+        "lastName": "Bandinelli",
+        "locations": "Slutsk"
+      },
+      "ru:": {
+        "firstName": "Ольгерд",
+        "lastName": "Обухович",
+        "locations": "Слуцк"
+      },
+      "by": {
+        "firstName": "Альгерд",
+        "lastName": "Абуховіч",
+        "locations": "Слуцк"
+      }
+    },
     "firstName": "Альгерд",
     "lastName": "Абуховіч",
     "titleImage": "https://upload.wikimedia.org/wikipedia/be/6/63/%D0%90%D0%B1%D1%83%D1%85%D0%BE%D0%B2%D1%96%D1%87.jpg",
@@ -45,6 +62,23 @@
     "videos": null
   },
   {
+    "translation": {
+      "en": {
+        "firstName": "Ryhor",
+        "lastName": "Baradulin",
+        "locations": "Minsk"
+      },
+      "ru:": {
+        "firstName": "Рыгор",
+        "lastName": "Бородулин",
+        "locations": "Минск"
+      },
+      "by": {
+        "firstName": "Рыгор",
+        "lastName": "Барадулін",
+        "locations": "Мінск"
+      }
+    },
     "firstName": "Рыгор",
     "lastName": "Барадулін",
     "titleImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Ryhor_Baradulin.jpg/250px-Ryhor_Baradulin.jpg",
@@ -109,6 +143,23 @@
     "videos": null
   },
   {
+    "translation": {
+      "en": {
+        "firstName": "Shmuel",
+        "lastName": "Plavnik",
+        "locations": "Lahoysk Raion, Minsk Voblast"
+      },
+      "ru:": {
+        "firstName": "Самуил",
+        "lastName": "Плавник",
+        "locations": "Логойский район, Минская область"
+      },
+      "by": {
+        "firstName": "Самуіл",
+        "lastName": "Плаўнік",
+        "locations": "Лагойскі раён, Мінская вобласць"
+      }
+    },
     "firstName": "Самуіл",
     "lastName": "Плаўнік",
     "titleImage": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Zmitrok_Biadulia1.jpg",
@@ -177,6 +228,23 @@
     "videos": "https://www.youtube.com/watch?v=GB_rlueYscM"
   },
   {
+    "translation": {
+      "en": {
+        "firstName": "Frantsishak",
+        "lastName": "Alyakhnovich",
+        "locations": "Vilnius"
+      },
+      "ru:": {
+        "firstName": "Франтишек",
+        "lastName": "Олехнович",
+        "locations": "Вильнюс"
+      },
+      "by": {
+        "firstName": "Францішак",
+        "lastName": "Аляхновіч",
+        "locations": "Вильнюс"
+      }
+    },
     "firstName": "Францішак",
     "lastName": "Аляхновіч",
     "titleImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Franci%C5%A1ak_Alachnovi%C4%8D.jpg/250px-Franci%C5%A1ak_Alachnovi%C4%8D.jpg",

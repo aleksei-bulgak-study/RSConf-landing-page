@@ -15,9 +15,11 @@ class Language extends React.Component {
   }
 
   changeLanguageHandler(language) {
+    const { onLanguageChangeHanler } = this.props;
     this.i18n = i18n;
     i18n.changeLanguage(language);
     this.setState({ current: language });
+    onLanguageChangeHanler(language);
   }
 
   isLanguageSelected(language) {
@@ -71,6 +73,10 @@ LanguageButton.propTypes = {
   onClick: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
   isActive: PropTypes.func.isRequired,
+};
+
+Language.propTypes = {
+  onLanguageChangeHanler: PropTypes.func.isRequired,
 };
 
 const LanguageButtonWrapped = withNamespaces()(LanguageButton);

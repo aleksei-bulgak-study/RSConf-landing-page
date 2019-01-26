@@ -23,14 +23,16 @@ class Search extends React.Component {
   }
 
   filterData(search) {
-    const { authorsInfo } = this.props;
+    const { authorsInfo, language } = this.props;
     let match = [...authorsInfo];
     if (search) {
       const searchLowerCase = search.toLowerCase();
-      match = authorsInfo.filter(author => (
-        author.firstName.toLowerCase().includes(searchLowerCase)
-        || author.lastName.toLowerCase().includes(searchLowerCase)
-        || author.locations[0].name.toLowerCase().includes(searchLowerCase)));
+      match = authorsInfo.filter((author) => {
+        const data = author.translation[language];
+        return data.firstName.toLowerCase().includes(searchLowerCase)
+          || data.lastName.toLowerCase().includes(searchLowerCase)
+          || data.locations.toLowerCase().includes(searchLowerCase);
+      });
     }
     this.setState({ searchResult: match });
   }
@@ -57,6 +59,11 @@ class Search extends React.Component {
 Search.propTypes = {
   t: PropTypes.func.isRequired,
   authorsInfo: PropTypes.arrayOf(PropTypes.object).isRequired,
+  language: PropTypes.string,
+};
+
+Search.defaultProps = {
+  language: 'en',
 };
 
 export default Search;
