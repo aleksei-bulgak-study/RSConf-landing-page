@@ -1,5 +1,5 @@
 import React from 'react';
-import { Developer } from '../index';
+import Developer from '../developer/Developer';
 import { DEVELOPERS } from '../../constants/constants';
 import './aboutUs.css';
 
