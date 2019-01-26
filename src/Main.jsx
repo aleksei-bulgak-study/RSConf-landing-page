@@ -3,7 +3,7 @@ import { Route, NavLink, HashRouter } from 'react-router-dom';
 import { withNamespaces } from 'react-i18next';
 import PropTypes from 'prop-types';
 import {
-  Home, AboutUs, AuthorOfTheDay, Search, SearchResult,
+  Home, AboutUs, AuthorOfTheDay, Search,
   Language, OpenAuthorComponent,
 } from './components';
 import './styles/style.css';

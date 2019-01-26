@@ -24,6 +24,8 @@ const AuthorOfTheDay = ({ authorsInfo }) => {
         <li>Vestibulum vulputate</li>
         <li>Eget erat</li>
         <li>Id porttitor</li>
+        <li>{authorsPhoto}</li>
+        <li>{authorsName}</li>
       </ol>
     </div>
   );
