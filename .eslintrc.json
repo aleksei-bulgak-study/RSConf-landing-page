@@ -1,9 +1,0 @@
-{
-  "extends": "airbnb",
-  "env": {
-    "browser": true
-  },
-  "rules": {
-    "no-template-curly-in-string": "off"
-  }
-}

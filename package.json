@@ -17,7 +17,8 @@
   "eslintConfig": {
     "extends": "airbnb",
     "rules": {
-      "no-console": "off"
+      "no-console": "off",
+      "no-template-curly-in-string": "off"
     },
     "env": {
       "browser": true,
