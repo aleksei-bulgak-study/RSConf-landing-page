@@ -1,48 +1,31 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import AuthorOfTheDay from '../authorOfTheDay/AuthorOfTheDay';
 import './searchResult.css';
 
 const SearchResult = ({ authors }) => (
-  <Router>
-    <React.Fragment>
+  <div className="search-results">
+    <ul>
       {
         authors.map((author) => {
-          const address = `/author_${author.firstName}_${author.lastName}`;
+          const address = `/authorPage/${author.firstName}/${author.lastName}`;
           return (
-            <Link
-              key={author.firstName + author.lastName}
-              to={address}
-            >
-              {author.firstName}
-              {author.lastName}
-            </Link>
+            <li key={address}>
+              <Link
+                className="search-results__link"
+                key={author.firstName + author.lastName}
+                to={address}
+              >
+                {author.firstName}
+                {author.lastName}
+              </Link>
+            </li>
           );
         })
       }
-
-      <Route
-        path="/author_:id"
-        component={params => <OpenAuthorComponent authors={authors} id={params.match.params.id} />}
-      />
-    </React.Fragment>
-  </Router>
+    </ul>
+  </div>
 );
-
-function OpenAuthorComponent({ authors, id }) {
-  const selected = authors.filter(author => `${author.firstName}_${author.lastName}` === id);
-  return <AuthorOfTheDay authorsInfo={selected} />;
-}
-
-OpenAuthorComponent.propTypes = {
-  authors: PropTypes.arrayOf(PropTypes.object),
-  id: PropTypes.string.isRequired,
-};
-
-OpenAuthorComponent.defaultProps = {
-  authors: [],
-};
 
 SearchResult.propTypes = {
   authors: PropTypes.arrayOf(PropTypes.object).isRequired,

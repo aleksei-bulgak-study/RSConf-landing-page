@@ -7,7 +7,7 @@ const defineAuthors = (authors) => {
   const currentDate = date.getDate();
   const autorsCount = authors.length;
   const currentAutorsIndex = currentDate % autorsCount;
-  return authors[currentAutorsIndex - 1];
+  return authors[currentAutorsIndex];
 };
 
 const AuthorOfTheDay = ({ authorsInfo }) => {

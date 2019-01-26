@@ -39,9 +39,15 @@ class Search extends React.Component {
     const { search, searchResult } = this.state;
     const { t } = this.props;
     return (
-      <div>
-        <h2>{t('search')}</h2>
-        <input type="text" value={search} onChange={this.searchForData} />
+      <div className="search">
+        <label htmlFor="search__value" className="search__title">{t('search')}</label>
+        <input
+          id="search__value"
+          type="text"
+          className="search__value"
+          value={search}
+          onChange={this.searchForData}
+        />
         <SearchResult authors={searchResult} />
       </div>
     );

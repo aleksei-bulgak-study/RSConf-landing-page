@@ -6,3 +6,4 @@ export { default as SearchResult } from './searchResult/SearchResult';
 export { default as Developer } from './developer/Developer';
 export { default as AuthorPage } from './authorPage/AuthorPage';
 export { default as Language } from './language/Language';
+export { default as OpenAuthorComponent } from './authorWrapper/OpenAuthorComponent';
