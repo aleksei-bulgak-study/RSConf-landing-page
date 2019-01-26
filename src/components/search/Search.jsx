@@ -39,7 +39,7 @@ class Search extends React.Component {
 
   render() {
     const { search, searchResult } = this.state;
-    const { t } = this.props;
+    const { t, language } = this.props;
     return (
       <div className="search">
         <label htmlFor="search__value" className="search__title">{t('search')}</label>
@@ -50,7 +50,7 @@ class Search extends React.Component {
           value={search}
           onChange={this.searchForData}
         />
-        <SearchResult authors={searchResult} />
+        <SearchResult authors={searchResult} language={language} />
       </div>
     );
   }
