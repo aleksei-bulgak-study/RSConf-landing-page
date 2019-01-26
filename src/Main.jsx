@@ -34,7 +34,7 @@ const Main = ({ t }) => (
         <Route exact path="/" component={Home} />
         <Route
           path="/authorOfTheDay"
-          component={props => <AuthorOfTheDay {...props} autorsInfo={data} />}
+          component={props => <AuthorOfTheDay {...props} authorsInfo={data} />}
         />
         <Route path="/search" component={Search} />
         <Route path="/aboutus" component={AboutUs} />
