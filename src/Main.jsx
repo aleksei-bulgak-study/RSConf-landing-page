@@ -1,29 +1,32 @@
 import React from 'react';
 import { Route, NavLink, HashRouter } from 'react-router-dom';
+import { withNamespaces } from 'react-i18next';
+import PropTypes from 'prop-types';
 import {
-  Home, AboutUs, AuthorOfTheDay, Search, SearchResult,
+  Home, AboutUs, AuthorOfTheDay, Search, SearchResult, Language,
 } from './components';
 import './styles/style.css';
 import Fullist from './components/fulllist/Fullist';
 
-const Main = () => (
+const Main = ({ t }) => (
   <HashRouter>
     <div className="main">
-      <h1>CodeJam</h1>
+      <h1>{t('title')}</h1>
+      <Language />
       <ul className="header">
         <li>
           <NavLink exact to="/">
-            Home
+            {t('home')}
           </NavLink>
         </li>
         <li>
-          <NavLink to="/authorOfTheDay">Author of the day</NavLink>
+          <NavLink to="/authorOfTheDay">{t('author_of_the_day')}</NavLink>
         </li>
         <li>
-          <NavLink to="/search">Author Search</NavLink>
+          <NavLink to="/search">{t('author_search')}</NavLink>
         </li>
         <li>
-          <NavLink to="/aboutus">The project team</NavLink>
+          <NavLink to="/aboutus">{t('team')}</NavLink>
         </li>
         <li>
           <NavLink to="/fulllist">Authors</NavLink>
@@ -42,4 +45,8 @@ const Main = () => (
   </HashRouter>
 );
 
-export default Main;
+Main.propTypes = {
+  t: PropTypes.func.isRequired,
+};
+
+export default withNamespaces()(Main);
