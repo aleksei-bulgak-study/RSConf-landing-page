@@ -26,7 +26,7 @@ const AuthorOfTheDay = ({ authorsInfo }) => {
 };
 
 AuthorOfTheDay.propTypes = {
-  authorsInfo: PropTypes.arrayOf(PropTypes.obj),
+  authorsInfo: PropTypes.arrayOf(PropTypes.object),
 };
 
 AuthorOfTheDay.defaultProps = {
