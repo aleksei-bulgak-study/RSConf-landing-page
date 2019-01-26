@@ -30,3 +30,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.lang {
+  position:absolute;
+  top:0;
+  right:50px;
+}
