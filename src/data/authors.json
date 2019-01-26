@@ -6,7 +6,7 @@
         "lastName": "Bandinelli",
         "locations": "Slutsk"
       },
-      "ru:": {
+      "ru": {
         "firstName": "Ольгерд",
         "lastName": "Обухович",
         "locations": "Слуцк"
@@ -68,7 +68,7 @@
         "lastName": "Baradulin",
         "locations": "Minsk"
       },
-      "ru:": {
+      "ru": {
         "firstName": "Рыгор",
         "lastName": "Бородулин",
         "locations": "Минск"
@@ -149,7 +149,7 @@
         "lastName": "Plavnik",
         "locations": "Lahoysk Raion, Minsk Voblast"
       },
-      "ru:": {
+      "ru": {
         "firstName": "Самуил",
         "lastName": "Плавник",
         "locations": "Логойский район, Минская область"
@@ -234,7 +234,7 @@
         "lastName": "Alyakhnovich",
         "locations": "Vilnius"
       },
-      "ru:": {
+      "ru": {
         "firstName": "Франтишек",
         "lastName": "Олехнович",
         "locations": "Вильнюс"
