@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './authorOfTheDay.css';
 
 const AuthorOfTheDay = ({ autorsInfo }) => {
-  const autorsCount = autorsInfo.length();
+  const autorsCount = autorsInfo.length;
   return (
     <div>
       <h2>AuthorOfTheDay</h2>
