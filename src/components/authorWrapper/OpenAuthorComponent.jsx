@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import AuthorOfTheDay from '../authorOfTheDay/AuthorOfTheDay';
-// import AuthorPage from '../authorPage/AuthorPage';
+import AuthorPage from '../authorPage/AuthorPage';
 
 function OpenAuthorComponent({ authors, firstName, lastName }) {
   const selected = authors.filter(author => (
     author.firstName === firstName && author.lastName === lastName
-  ));
-  return <AuthorOfTheDay authorsInfo={selected} />;
+  ))[0];
+  return <AuthorPage info={selected} />;
 }
 
 OpenAuthorComponent.propTypes = {
