@@ -14,7 +14,6 @@ const AuthorOfTheDay = ({ authorsInfo }) => {
   const author = defineAuthors(authorsInfo);
   const authorsPhoto = author.titleImage;
   const authorsName = `${author.firstName} ${author.lastName}`;
-
   return (
     <div className="autor-of-the-day">
       <h2>Author of the day</h2>

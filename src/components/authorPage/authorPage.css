@@ -1,0 +1,39 @@
+.author-image {
+  grid-area: image;
+}
+
+.list-of-works{
+  grid-area:  works;
+}
+
+.timeline {
+  grid-area: timeline;
+}
+
+.photo-list {
+  grid-area: photos;
+}
+
+.video-list {
+  grid-area: video;
+}
+
+.map-component {
+  grid-area: map;
+}
+
+.author-page {
+  display:grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: auto;
+  grid-gap:10px;
+  grid-template-areas: 
+    "image timeline"
+    "works timeline"
+    "photos photos"
+    "video video"
+    "map map"
+  ;
+  justify-items: center;
+  align-items: center;
+}
