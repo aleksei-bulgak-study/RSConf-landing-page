@@ -16,6 +16,7 @@
 
 .video-list {
   grid-area: video;
+  position:relative;
 }
 
 .map-component {
@@ -36,4 +37,23 @@
   ;
   justify-items: center;
   align-items: center;
+}
+
+.video-overlay {
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1;
+  height:100%;
+  width:100%;
+  background:#ffffff;
+  opacity:0.6;
+  display:none;    
+}
+.video-video {
+  display:none;
+  position: absolute;
+  top:0px;
+  left:-250px;
+  z-index:2;
 }
