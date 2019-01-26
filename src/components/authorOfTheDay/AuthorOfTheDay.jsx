@@ -1,17 +1,18 @@
 import React from 'react';
-import './aboutUs.css';
+import './authorOfTheDay.css';
 
-const AboutUs = () => (
+const AuthorOfTheDay = () => (
   <div>
-    <h2>AboutUs</h2>
-    <p>AboutUs</p>
+    <h2>AuthorOfTheDay</h2>
+    <p>AuthorOfTheDay</p>
     <ol>
       <li>Nulla pulvinar diam</li>
       <li>Facilisis bibendum</li>
       <li>Vestibulum vulputate</li>
       <li>Eget erat</li>
+      <li>Id porttitor</li>
     </ol>
   </div>
 );
 
-export default AboutUs;
+export default AuthorOfTheDay;

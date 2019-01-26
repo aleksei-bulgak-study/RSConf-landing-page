@@ -1,11 +1,10 @@
 import React from 'react';
+import './home.css';
 
 const Home = () => (
   <div>
     <h2>Home</h2>
-    <p>
-    Home
-    </p>
+    <p>Home</p>
     <ol>
       <li>Nulla pulvinar diam</li>
       <li>Facilisis bibendum</li>
