@@ -4,6 +4,7 @@ import TimeLine from '../timeLine/TimeLine';
 import AuthorCutaway from '../authorCutaway/AuthorCutaway';
 import AuthorWorks from '../authorWorks/AuthorWorks';
 import './authorPage.css';
+import click from './overlay';
 
 const AuthorPage = ({ info }) => (
   <div className="author-page">
@@ -11,7 +12,11 @@ const AuthorPage = ({ info }) => (
     <AuthorWorks works={info.works} />
     <TimeLine className="timeline" info={info.timeline} />
     <div className="photo-list">photo-list</div>
-    <div className="video-list">video-list</div>
+    <div className="video-list">
+      <img className="videosnap" alt="snap" src="#" onClick={click}/>
+      <div className="video-overlay"></div>
+      <div className="video-video"></div>
+    </div>
     <div className="map-component">map-component</div>
   </div>
 );

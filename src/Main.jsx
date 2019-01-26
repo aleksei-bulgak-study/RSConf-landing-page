@@ -75,7 +75,6 @@ class Main extends React.Component {
               )}
             />
             <Route path="/aboutus" component={AboutUs} />
-            <Route path="/searchResult" component={SearchResult} />
             <Route path="/fulllist" component={Fullist} />
             <Route
               path="/authorPage/:firstName/:lastName"
