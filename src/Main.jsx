@@ -15,7 +15,7 @@ const Main = () => (
           </NavLink>
         </li>
         <li>
-          <NavLink to="/AuthorOfTheDay">Author of the day</NavLink>
+          <NavLink to="/authorOfTheDay">Author of the day</NavLink>
         </li>
         <li>
           <NavLink to="/search">Author Search</NavLink>
@@ -26,7 +26,7 @@ const Main = () => (
       </ul>
       <div className="content">
         <Route exact path="/" component={Home} />
-        <Route path="/AuthorOfTheDay" component={AuthorOfTheDay} />
+        <Route path="/authorOfTheDay" component={AuthorOfTheDay} />
         <Route path="/search" component={Search} />
         <Route path="/aboutus" component={AboutUs} />
         <Route path="/searchResult" component={SearchResult} />
