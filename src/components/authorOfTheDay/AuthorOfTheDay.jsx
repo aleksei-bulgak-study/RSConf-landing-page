@@ -2,8 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './authorOfTheDay.css';
 
-const AuthorOfTheDay = ({ autorsInfo }) => {
-  const autorsCount = autorsInfo.length;
+const defineAuthors = (authors) => {
+  const date = new Date();
+  const currentDate = date.getDate();
+  const autorsCount = authors.length;
+  const currentAutorsIndex = currentDate % autorsCount;
+  return authors[currentAutorsIndex];
+};
+
+const AuthorOfTheDay = ({ authorsInfo }) => {
+  const author = defineAuthors(authorsInfo);
+  const authorsPhoto = author.titleImage;
+  const authorsName = `${author.firstName} ${author.lastName}`;
   return (
     <div>
       <h2>AuthorOfTheDay</h2>
@@ -20,11 +30,11 @@ const AuthorOfTheDay = ({ autorsInfo }) => {
 };
 
 AuthorOfTheDay.propTypes = {
-  autorsInfo: PropTypes.arrayOf(PropTypes.obj),
+  authorsInfo: PropTypes.arrayOf(PropTypes.object),
 };
 
 AuthorOfTheDay.defaultProps = {
-  autorsInfo: [],
+  authorsInfo: [],
 };
 
 export default AuthorOfTheDay;

@@ -23,7 +23,8 @@
     "extends": "airbnb",
     "rules": {
       "no-console": "off",
-      "no-template-curly-in-string": "off"
+      "no-template-curly-in-string": "off",
+      "jsx-a11y/label-has-for": "off"
     },
     "env": {
       "browser": true,

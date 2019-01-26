@@ -27,6 +27,7 @@ i18n.addResourceBundle('en', 'translation', {
   author_search: 'Author Search',
   team: 'The project team',
   authors: 'Authors',
+  search: 'Search',
 });
 i18n.addResourceBundle('ru', 'translation', {
   en: 'англ',
@@ -38,6 +39,7 @@ i18n.addResourceBundle('ru', 'translation', {
   author_search: 'Поиск поэтов',
   team: 'Наша команда',
   authors: 'Поэты',
+  search: 'Поиск',
 });
 i18n.addResourceBundle('by', 'translation', {
   en: 'англ',
@@ -49,6 +51,7 @@ i18n.addResourceBundle('by', 'translation', {
   author_search: 'Пошук па паэтам',
   team: 'Каманда',
   authors: 'Паэты',
+  search: 'Пошук',
 });
 
 export default i18n;
