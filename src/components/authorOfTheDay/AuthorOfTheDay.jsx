@@ -7,7 +7,7 @@ const defineAuthors = (authors) => {
   const currentDate = date.getDate();
   const autorsCount = authors.length;
   const currentAutorsIndex = currentDate % autorsCount;
-  return authors[currentAutorsIndex - 1];
+  return authors[currentAutorsIndex];
 };
 
 const AuthorOfTheDay = ({ authorsInfo }) => {
@@ -15,18 +15,24 @@ const AuthorOfTheDay = ({ authorsInfo }) => {
   const authorsPhoto = author.titleImage;
   const authorsName = `${author.firstName} ${author.lastName}`;
   return (
-    <div className="autor-of-the-day">
-      <h2>Author of the day</h2>
-      <a href={authorsPhoto}>
-        <img src={authorsPhoto} alt={authorsName} />
-        <span>{authorsName}</span>
-      </a>
+    <div>
+      <h2>AuthorOfTheDay</h2>
+      <p>AuthorOfTheDay</p>
+      <ol>
+        <li>Nulla pulvinar diam</li>
+        <li>Facilisis bibendum</li>
+        <li>Vestibulum vulputate</li>
+        <li>Eget erat</li>
+        <li>Id porttitor</li>
+        <li>{authorsPhoto}</li>
+        <li>{authorsName}</li>
+      </ol>
     </div>
   );
 };
 
 AuthorOfTheDay.propTypes = {
-  authorsInfo: PropTypes.arrayOf(PropTypes.obj),
+  authorsInfo: PropTypes.arrayOf(PropTypes.object),
 };
 
 AuthorOfTheDay.defaultProps = {

@@ -16,6 +16,7 @@
 
 .video-list {
   grid-area: video;
+  position:relative;
 }
 
 .map-component {
@@ -23,17 +24,29 @@
 }
 
 .author-page {
-  display:grid;
-  grid-template-columns: 100px 100px;
-  grid-template-rows: auto;
-  grid-gap:10px;
-  grid-template-areas: 
-    "image timeline"
-    "works timeline"
-    "photos photos"
-    "video video"
-    "map map"
-  ;
-  justify-items: center;
+  width: 90%;
+  padding: 30px;
+  background-color: rgb(139, 138, 138);
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.video-overlay {
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1;
+  height:100%;
+  width:100%;
+  background:#ffffff;
+  opacity:0.6;
+  display:none;    
+}
+.video-video {
+  display:none;
+  position: absolute;
+  top:0px;
+  left:-250px;
+  z-index:2;
 }

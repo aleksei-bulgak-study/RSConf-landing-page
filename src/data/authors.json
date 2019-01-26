@@ -1,5 +1,22 @@
 [
   {
+    "translation": {
+      "en": {
+        "firstName": "Olgerd",
+        "lastName": "Bandinelli",
+        "locations": "Slutsk"
+      },
+      "ru": {
+        "firstName": "Ольгерд",
+        "lastName": "Обухович",
+        "locations": "Слуцк"
+      },
+      "by": {
+        "firstName": "Альгерд",
+        "lastName": "Абуховіч",
+        "locations": "Слуцк"
+      }
+    },
     "firstName": "Альгерд",
     "lastName": "Абуховіч",
     "titleImage": "https://upload.wikimedia.org/wikipedia/be/6/63/%D0%90%D0%B1%D1%83%D1%85%D0%BE%D0%B2%D1%96%D1%87.jpg",
@@ -13,15 +30,15 @@
     "works": [
       {
         "name": "Дума а Каралю XII",
-        "dateOfPublication": null
+        "dateOfPublication": "1868"
       },
       {
-        "name": "Ваўкалака",
-        "dateOfPublication": null
+        "name": "Ваўкалак",
+        "dateOfPublication": "1870"
       },
       {
-        "name": "Ваўкалака",
-        "dateOfPublication": null
+        "name": "Старшына",
+        "dateOfPublication": "1874"
       }
     ],
     "timeline": [
@@ -45,6 +62,23 @@
     "videos": null
   },
   {
+    "translation": {
+      "en": {
+        "firstName": "Ryhor",
+        "lastName": "Baradulin",
+        "locations": "Minsk"
+      },
+      "ru": {
+        "firstName": "Рыгор",
+        "lastName": "Бородулин",
+        "locations": "Минск"
+      },
+      "by": {
+        "firstName": "Рыгор",
+        "lastName": "Барадулін",
+        "locations": "Мінск"
+      }
+    },
     "firstName": "Рыгор",
     "lastName": "Барадулін",
     "titleImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Ryhor_Baradulin.jpg/250px-Ryhor_Baradulin.jpg",
@@ -75,10 +109,6 @@
       {
         "name": "Босая зорка",
         "dateOfPublication": "2001"
-      },
-      {
-        "name": "Сама пайду дарогаю, голас пашлю дуброваю: Песні матчыны з Вушаччыны",
-        "dateOfPublication": "2005"
       }
     ],
     "timeline": [
@@ -109,6 +139,23 @@
     "videos": null
   },
   {
+    "translation": {
+      "en": {
+        "firstName": "Shmuel",
+        "lastName": "Plavnik",
+        "locations": "Lahoysk Raion, Minsk Voblast"
+      },
+      "ru": {
+        "firstName": "Самуил",
+        "lastName": "Плавник",
+        "locations": "Логойский район, Минская область"
+      },
+      "by": {
+        "firstName": "Самуіл",
+        "lastName": "Плаўнік",
+        "locations": "Лагойскі раён, Мінская вобласць"
+      }
+    },
     "firstName": "Самуіл",
     "lastName": "Плаўнік",
     "titleImage": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Zmitrok_Biadulia1.jpg",
@@ -121,15 +168,11 @@
     ],
     "works": [
       {
-        "name": "Апавяданні / Змітрок Бядуля. — Мінск: Народная асвета",
+        "name": "Зборнік апавяданняў",
         "dateOfPublication": "1973"
       },
       {
-        "name": "Антология педагогической мысли Белорусской ССР",
-        "dateOfPublication": "1986"
-      },
-      {
-        "name": "Дзень добры!: вершы, казкі, апавяданні",
+        "name": "Дзень добры",
         "dateOfPublication": "1989"
       },
       {
@@ -177,6 +220,23 @@
     "videos": "https://www.youtube.com/watch?v=GB_rlueYscM"
   },
   {
+    "translation": {
+      "en": {
+        "firstName": "Frantsishak",
+        "lastName": "Alyakhnovich",
+        "locations": "Vilnius"
+      },
+      "ru": {
+        "firstName": "Франтишек",
+        "lastName": "Олехнович",
+        "locations": "Вильнюс"
+      },
+      "by": {
+        "firstName": "Францішак",
+        "lastName": "Аляхновіч",
+        "locations": "Вильнюс"
+      }
+    },
     "firstName": "Францішак",
     "lastName": "Аляхновіч",
     "titleImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Franci%C5%A1ak_Alachnovi%C4%8D.jpg/250px-Franci%C5%A1ak_Alachnovi%C4%8D.jpg",
@@ -193,7 +253,7 @@
         "dateOfPublication": "1916"
       },
       {
-        "name": "Базылішк",
+        "name": "Базылішка",
         "dateOfPublication": "1917"
       },
       {
@@ -242,5 +302,96 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Alakhnovich1.jpg/300px-Alakhnovich1.jpg"
     ],
     "videos": "https://www.youtube.com/watch?v=GB_rlueYscM"
+  },
+  {
+    "translation": {
+      "en": {
+        "firstName": "Petrus",
+        "lastName": "Brovka",
+        "locations": "Minsk"
+      },
+      "ru": {
+        "firstName": "Петрусь",
+        "lastName": "Бровка",
+        "locations": "Минск"
+      },
+      "by": {
+        "firstName": "Пятрусь",
+        "lastName": "Броўка",
+        "locations": "Менск"
+      }
+    },
+    "firstName": "Пятрусь",
+    "lastName": "Броўка",
+    "titleImage": "https://upload.wikimedia.org/wikipedia/be-x-old/thumb/a/a4/Piatru%C5%9B_Bro%C7%94ka.jpg/245px-Piatru%C5%9B_Bro%C7%94ka.jpg",
+    "locations": [
+      {
+        "name": "Минск",
+        "latitude": 53.55,
+        "longitude": 27.33
+      }
+    ],
+    "works": [
+      {
+        "name": "Гады як шторм",
+        "dateOfPublication": "1930"
+      },
+      {
+        "name": "Прамова фактамі",
+        "dateOfPublication": "1931"
+      },
+      {
+        "name": "Цэхавыя будні",
+        "dateOfPublication": "1931"
+      },
+      {
+        "name": "Каляндры",
+        "dateOfPublication": "1931"
+      },
+      {
+        "name": "Паэзія",
+        "dateOfPublication": "1932"
+      },
+      {
+        "name": "Ураджай",
+        "dateOfPublication": "1933"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "1918",
+        "activity": "Пятрусь Броўка пачаў працаваць перапісчыкам у Вяліка-Долецкім валасным камісарыяце (савецкай грамадскай установе), потым справаводам валвыканкома, рахункаводам у саўгасе."
+      },
+      {
+        "date": "1923",
+        "activity": "Пятрусь Броўка быў выкліканы на 1-ы з'езд селькораў Беларусі, але не паехаў, бо не было сродкаў на дарогу. Ён быў выбраны сакратаром камсамольскай арганізацыі ў роднай вёсцы"
+      },
+      {
+        "date": "1926",
+        "activity": "Пятрусь Броўка дэбютаваў вершамі ў газеце «Чырвоная Полаччына» і ў альманаху «Наддзвінне»"
+      },
+      {
+        "date": "1928",
+        "activity": "Пятрусь Броўка паступіў на літаратурна-лінгвістычнае аддзяленне педагагічнага факультэта БДУ"
+      },
+      {
+        "date": "1934",
+        "activity": "Пятрусь Броўка стаў членам Саюза пісьменнікаў СССР."
+      },
+      {
+        "date": "1962",
+        "activity": "Пятрусь Броўка стаў народным паэтам БССР"
+      },
+      {
+        "date": "1976",
+        "activity": "Пятрусь Броўка ўзнагароджаны Дзяржаўнай прэмiяй БССР за актыўны ўдзел у стварэннi Беларускай Савецкай Энцыклапедыi"
+      }
+    ],
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/6/68/Alakhnovich2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/HakubokAlachnovich.jpg/280px-HakubokAlachnovich.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Belarusian_writers_1920.jpg/280px-Belarusian_writers_1920.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Alakhnovich1.jpg/300px-Alakhnovich1.jpg"
+    ]
   }
 ]
