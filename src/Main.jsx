@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, NavLink, HashRouter } from 'react-router-dom';
 import {
-  Home, AboutUs, AuthorOfTheDay, Search, SearchResult,
+  Home, AboutUs, AuthorOfTheDay, Search, SearchResult, AuthorPage,
 } from './components';
 import './styles/style.css';
 import Fullist from './components/fulllist/Fullist';
@@ -36,6 +36,7 @@ const Main = () => (
         <Route path="/aboutus" component={AboutUs} />
         <Route path="/searchResult" component={SearchResult} />
         <Route path="/fulllist" component={Fullist} />
+        <Route path="/authorPage" component={AuthorPage} />
       </div>
       <div className="lang"><button type="button">lang</button></div>
     </div>
