@@ -30,15 +30,15 @@
     "works": [
       {
         "name": "Дума а Каралю XII",
-        "dateOfPublication": null
+        "dateOfPublication": "1868"
       },
       {
-        "name": "Ваўкалака",
-        "dateOfPublication": null
+        "name": "Ваўкалак",
+        "dateOfPublication": "1870"
       },
       {
-        "name": "Ваўкалака",
-        "dateOfPublication": null
+        "name": "Старшына",
+        "dateOfPublication": "1874"
       }
     ],
     "timeline": [
@@ -109,10 +109,6 @@
       {
         "name": "Босая зорка",
         "dateOfPublication": "2001"
-      },
-      {
-        "name": "Сама пайду дарогаю, голас пашлю дуброваю: Песні матчыны з Вушаччыны",
-        "dateOfPublication": "2005"
       }
     ],
     "timeline": [
@@ -172,15 +168,11 @@
     ],
     "works": [
       {
-        "name": "Апавяданні / Змітрок Бядуля. — Мінск: Народная асвета",
+        "name": "Зборнік апавяданняў",
         "dateOfPublication": "1973"
       },
       {
-        "name": "Антология педагогической мысли Белорусской ССР",
-        "dateOfPublication": "1986"
-      },
-      {
-        "name": "Дзень добры!: вершы, казкі, апавяданні",
+        "name": "Дзень добры",
         "dateOfPublication": "1989"
       },
       {
@@ -261,7 +253,7 @@
         "dateOfPublication": "1916"
       },
       {
-        "name": "Базылішк",
+        "name": "Базылішка",
         "dateOfPublication": "1917"
       },
       {
@@ -310,5 +302,96 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Alakhnovich1.jpg/300px-Alakhnovich1.jpg"
     ],
     "videos": "https://www.youtube.com/watch?v=GB_rlueYscM"
+  },
+  {
+    "translation": {
+      "en": {
+        "firstName": "Petrus",
+        "lastName": "Brovka",
+        "locations": "Minsk"
+      },
+      "ru": {
+        "firstName": "Петрусь",
+        "lastName": "Бровка",
+        "locations": "Минск"
+      },
+      "by": {
+        "firstName": "Пятрусь",
+        "lastName": "Броўка",
+        "locations": "Менск"
+      }
+    },
+    "firstName": "Пятрусь",
+    "lastName": "Броўка",
+    "titleImage": "https://upload.wikimedia.org/wikipedia/be-x-old/thumb/a/a4/Piatru%C5%9B_Bro%C7%94ka.jpg/245px-Piatru%C5%9B_Bro%C7%94ka.jpg",
+    "locations": [
+      {
+        "name": "Минск",
+        "latitude": 53.55,
+        "longitude": 27.33
+      }
+    ],
+    "works": [
+      {
+        "name": "Гады як шторм",
+        "dateOfPublication": "1930"
+      },
+      {
+        "name": "Прамова фактамі",
+        "dateOfPublication": "1931"
+      },
+      {
+        "name": "Цэхавыя будні",
+        "dateOfPublication": "1931"
+      },
+      {
+        "name": "Каляндры",
+        "dateOfPublication": "1931"
+      },
+      {
+        "name": "Паэзія",
+        "dateOfPublication": "1932"
+      },
+      {
+        "name": "Ураджай",
+        "dateOfPublication": "1933"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "1918",
+        "activity": "Пятрусь Броўка пачаў працаваць перапісчыкам у Вяліка-Долецкім валасным камісарыяце (савецкай грамадскай установе), потым справаводам валвыканкома, рахункаводам у саўгасе."
+      },
+      {
+        "date": "1923",
+        "activity": "Пятрусь Броўка быў выкліканы на 1-ы з'езд селькораў Беларусі, але не паехаў, бо не было сродкаў на дарогу. Ён быў выбраны сакратаром камсамольскай арганізацыі ў роднай вёсцы"
+      },
+      {
+        "date": "1926",
+        "activity": "Пятрусь Броўка дэбютаваў вершамі ў газеце «Чырвоная Полаччына» і ў альманаху «Наддзвінне»"
+      },
+      {
+        "date": "1928",
+        "activity": "Пятрусь Броўка паступіў на літаратурна-лінгвістычнае аддзяленне педагагічнага факультэта БДУ"
+      },
+      {
+        "date": "1934",
+        "activity": "Пятрусь Броўка стаў членам Саюза пісьменнікаў СССР."
+      },
+      {
+        "date": "1962",
+        "activity": "Пятрусь Броўка стаў народным паэтам БССР"
+      },
+      {
+        "date": "1976",
+        "activity": "Пятрусь Броўка ўзнагароджаны Дзяржаўнай прэмiяй БССР за актыўны ўдзел у стварэннi Беларускай Савецкай Энцыклапедыi"
+      }
+    ],
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/6/68/Alakhnovich2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/HakubokAlachnovich.jpg/280px-HakubokAlachnovich.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Belarusian_writers_1920.jpg/280px-Belarusian_writers_1920.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Alakhnovich1.jpg/300px-Alakhnovich1.jpg"
+    ]
   }
 ]
