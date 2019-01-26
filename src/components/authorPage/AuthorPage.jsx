@@ -20,10 +20,10 @@ const AuthorPage = ({ info }) => (
     <div className="photo-list"><PhotoGallery photos={photos} /></div>
     <div className="video-list">
       <img className="videosnap" alt="snap" src="#" onClick={click}/>
-      <div className="video-overlay"></div>
-      <div className="video-video"></div>
+      <div className="video-overlay" />
+      <div className="video-video" />
     </div>
-    <div className="map-component">map-component</div>
+    <div className="map-component" />
   </div>
 );
 

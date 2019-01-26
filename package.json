@@ -1,5 +1,5 @@
 {
-  "name": "dashboard",
+  "name": "rss_codejam",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -41,5 +41,16 @@
   "devDependencies": {
     "eslint-config-airbnb": "^17.1.0"
   },
-  "homepage": "https://aleksei-bulgak-study.github.io/RSConf-landing-page/"
+  "homepage": "https://aleksei-bulgak-study.github.io/RSConf-landing-page/",
+  "description": "rss code jam\r [![Build Status](https://travis-ci.org/aleksei-bulgak-study/RSConf-landing-page.svg?branch=master)](https://travis-ci.org/aleksei-bulgak-study/RSConf-landing-page)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksei-bulgak-study/RSConf-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleksei-bulgak-study/RSConf-landing-page/issues"
+  }
 }
