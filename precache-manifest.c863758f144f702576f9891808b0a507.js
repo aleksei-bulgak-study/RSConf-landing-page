@@ -4,23 +4,23 @@ self.__precacheManifest = [
     "url": "/RSConf-landing-page/static/js/runtime~main.551519c6.js"
   },
   {
-    "revision": "add6fe05224eaf8a02d1",
-    "url": "/RSConf-landing-page/static/js/main.add6fe05.chunk.js"
+    "revision": "f39a7d08576f704c6bdc",
+    "url": "/RSConf-landing-page/static/js/main.f39a7d08.chunk.js"
   },
   {
     "revision": "684c36a493c1bc68f049",
     "url": "/RSConf-landing-page/static/js/1.684c36a4.chunk.js"
   },
   {
-    "revision": "add6fe05224eaf8a02d1",
-    "url": "/RSConf-landing-page/static/css/main.1acf5393.chunk.css"
+    "revision": "f39a7d08576f704c6bdc",
+    "url": "/RSConf-landing-page/static/css/main.fba66a40.chunk.css"
   },
   {
     "revision": "684c36a493c1bc68f049",
     "url": "/RSConf-landing-page/static/css/1.0d49d9ea.chunk.css"
   },
   {
-    "revision": "a22c7f9add176622d96b5422f9a24940",
+    "revision": "fad5d0805631c65098e50fbef65a4e33",
     "url": "/RSConf-landing-page/index.html"
   }
 ];
