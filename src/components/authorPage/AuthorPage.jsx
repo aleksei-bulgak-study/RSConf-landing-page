@@ -6,6 +6,7 @@ import AuthorWorks from '../authorWorks/AuthorWorks';
 import './authorPage.css';
 import click from './overlay';
 import PhotoGallery from '../photoGallery/PhotoGallery';
+import GoogleMapComponent from '../googleMaps/GoogleMapComponent';
 
 const photos = [
   'http://catalog.library.mogilev.by/kray/Culture/photo/r5p15_1.jpg',
@@ -19,13 +20,16 @@ const AuthorPage = ({ info }) => (
     <TimeLine className="timeline" info={info.timeline} />
     <div className="photo-list"><PhotoGallery photos={photos} /></div>
     <div className="video-list">
-      <img className="videosnap" alt="snap" src="#" onClick={click}/>
-      <div className="video-overlay"></div>
-      <div className="video-video"></div>
+      <img className="videosnap" alt="snap" src="#" onClick={click} />
+      <div className="video-overlay" />
+      <div className="video-video" />
     </div>
-    <div className="map-component">map-component</div>
+    <div className="map-component">
+      <GoogleMapComponent info={info.locations} />
+    </div>
   </div>
 );
+
 
 AuthorPage.propTypes = {
   info: PropTypes.shape({
