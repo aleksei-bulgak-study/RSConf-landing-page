@@ -21,6 +21,8 @@
 
 .map-component {
   grid-area: map;
+  min-height: 40vh;
+  width: 100%;
 }
 
 .author-page {
