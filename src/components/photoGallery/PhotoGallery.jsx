@@ -6,7 +6,7 @@ const PhotoGallery = ({ photos }) => {
   const makeGallery = photoList => photoList.map((elem, index) => {
     const src = elem;
     const alt = `pic${index + 1}`;
-    return <img className="gallery-item" src={src} alt={alt} />;
+    return <img key={src} className="gallery-item" src={src} alt={alt} />;
   });
   return (
     <div className="gallery-container">{makeGallery(photos)}</div>
