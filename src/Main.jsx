@@ -14,6 +14,7 @@ import {
 import './styles/style.css';
 import FullList from './components/fulllist/Fullist';
 import data from './data/authors.json';
+import Footer from './components/footer/Footer';
 
 const FullListWrapped = withNamespaces()(FullList);
 
@@ -37,42 +38,57 @@ class Main extends React.Component {
     const { language } = this.state;
     return (
       <HashRouter>
-        <div className="main">
-          <Header translate={t} />
-          <div className="content">
-            <Route
-              exact
-              path="/"
-              component={props => <Home {...props} t={t} authorsInfo={data} />}
-            />
-            <Route
-              path="/authorOfTheDay"
-              component={props => <AuthorOfTheDay {...props} t={t} authorsInfo={data} />}
-            />
-            <Route
-              path="/search"
-              component={props => <Search {...props} language={language} authorsInfo={data} />}
-            />
-            <Route path="/aboutus" component={withNamespaces()(AboutUs)} />
-            <Route
-              path="/fulllist"
-              component={props => (
-                <FullListWrapped {...props} language={language} authorsInfo={data} />
-              )}
-            />
-            <Route
-              path="/authorPage/:firstName/:lastName"
-              component={params => (
-                <OpenAuthorComponent
-                  authors={data}
-                  firstName={params.match.params.firstName}
-                  lastName={params.match.params.lastName}
-                />
-              )}
-            />
+        <React.Fragment>
+          <div className="main">
+            <Header translate={t} />
+            <div className="content">
+              <Route
+                exact
+                path="/"
+                component={props => <Home {...props} t={t} authorsInfo={data} />}
+              />
+              <Route
+                path="/authorOfTheDay"
+                component={props => <AuthorOfTheDay {...props} t={t} authorsInfo={data} />}
+              />
+              <Route
+                path="/search"
+                component={props => (
+                  <Search
+                    {...props}
+                    language={language}
+                    authorsInfo={data}
+                  />
+                )}
+              />
+              <Route path="/aboutus" component={withNamespaces()(AboutUs)} />
+              <Route
+                path="/fulllist"
+                component={props => (
+                  <FullListWrapped
+                    {...props}
+                    language={language}
+                    authorsInfo={data}
+                  />
+                )}
+              />
+              <Route
+                path="/authorPage/:firstName/:lastName"
+                component={
+                  params => (
+                    <OpenAuthorComponent
+                      authors={data}
+                      firstName={params.match.params.firstName}
+                      lastName={params.match.params.lastName}
+                    />
+                  )
+                }
+              />
+            </div>
           </div>
           <Language onLanguageChangeHanler={this.onLanguageChangeHanler} />
-        </div>
+          <Footer />
+        </React.Fragment>
       </HashRouter>
     );
   }
