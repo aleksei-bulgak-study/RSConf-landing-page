@@ -103,8 +103,8 @@ class Main extends React.Component {
                 }
               />
             </div>
-            <Language onLanguageChangeHanler={this.onLanguageChangeHanler} />
           </div>
+          <Language onLanguageChangeHanler={this.onLanguageChangeHanler} />
           <Footer />
         </React.Fragment>
       </HashRouter>
