@@ -52,11 +52,12 @@ class Search extends React.Component {
 
   render() {
     const { searchRequest } = this.state;
+    const { t } = this.props;
     return (
       <div className="container">
         <div className="col">
           <section className="search-shape">
-            <input type="text" placeholder="search author" onChange={this.handleChange.bind(this)} />
+            <input type="text" placeholder={t('search-placeholder')} onChange={this.handleChange.bind(this)} />
           </section>
           {renderCard(searchRequest)}
         </div>
@@ -69,8 +70,10 @@ Search.propTypes = {
   authorsInfo: PropTypes.arrayOf(
     PropTypes.object,
   ),
+  t: PropTypes.func,
 };
 Search.defaultProps = {
   authorsInfo: [],
+  t: value => value,
 };
 export default Search;

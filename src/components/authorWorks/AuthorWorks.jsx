@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './authorWorks.css';
 
-const AuthorWorks = ({ works }) => {
+const AuthorWorks = ({ works, t }) => {
   const generateWorksList = authorWorks => authorWorks.map((elem, index) => {
     const work = elem.name;
     const date = elem.dateOfPublication;
@@ -18,7 +18,7 @@ const AuthorWorks = ({ works }) => {
 
   return (
     <div className="author-works">
-      <h2>Работы автора</h2>
+      <h2>{t('author-works')}</h2>
       <ul className="works-list">{generateWorksList(works)}</ul>
     </div>
   );

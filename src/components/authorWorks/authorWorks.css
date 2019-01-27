@@ -7,7 +7,7 @@
 }
 
 .author-works h2{
-  color: rgb(241, 241, 241);
+  color: #858585;
 }
 
 .works-list {
@@ -16,6 +16,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .author-works li {

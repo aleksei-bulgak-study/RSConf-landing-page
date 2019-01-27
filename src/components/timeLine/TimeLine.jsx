@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 import './timeLine.css';
 
-const TimeLine = ({ info }) => {
+const TimeLine = ({ info, t }) => {
   const generateItems = data => data.map((elem, index) => {
     const { activity, date } = elem;
     const key = activity.slice(0, 2) + date.slice(2) + index;
@@ -26,7 +26,7 @@ const TimeLine = ({ info }) => {
 
   return (
     <div className="timeline-block">
-      <h2>Author`s activities</h2>
+      <h2>{t('authors-activities')}</h2>
       <Timeline lineColor="#ddd" className="timeline">
         {generateItems(info)}
       </Timeline>
@@ -36,10 +36,12 @@ const TimeLine = ({ info }) => {
 
 TimeLine.propTypes = {
   info: PropTypes.arrayOf(PropTypes.object),
+  t: PropTypes.func,
 };
 
 TimeLine.defaultProps = {
   info: [],
+  t: value => value,
 };
 
 export default TimeLine;
