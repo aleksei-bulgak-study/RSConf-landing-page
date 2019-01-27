@@ -1,8 +1,9 @@
 import React from 'react';
 import './home.css';
 import { NavLink } from 'react-router-dom';
+import AuthorOfTheDay from '../authorOfTheDay/AuthorOfTheDay';
 
-const Home = () => (
+const Home = props => (
   <div className="homepage">
     <h2>Добро пожаловать на нашу страничку посвященную Поэтам Беларуси!</h2>
     <p>
@@ -15,9 +16,7 @@ const Home = () => (
     </p>
     <div className="author-of-the-day">
       <h2>Автор Дня!</h2>
-      <img src="#" alt="Автор дня" className="auth-img" />
-      <p>Имя Фамилия</p>
-      <p>1793-2045</p>
+      <AuthorOfTheDay {...props} />
     </div>
   </div>
 );

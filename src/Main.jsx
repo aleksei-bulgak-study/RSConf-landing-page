@@ -58,7 +58,11 @@ class Main extends React.Component {
             </li>
           </ul>
           <div className="content">
-            <Route exact path="/" component={Home} />
+            <Route
+              exact
+              path="/"
+              component={props => <Home {...props} authorsInfo={data} />}
+            />
             <Route
               path="/authorOfTheDay"
               component={props => <AuthorOfTheDay {...props} authorsInfo={data} />}
