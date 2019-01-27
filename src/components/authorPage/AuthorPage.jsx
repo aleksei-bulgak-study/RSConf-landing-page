@@ -7,6 +7,7 @@ import './authorPage.css';
 import PhotoGallery from '../photoGallery/PhotoGallery';
 import VideoOverlay from '../videoOverlay/VideoOverlay';
 import GoogleMapComponent from '../googleMaps/GoogleMapComponent';
+import OpenStreetMap from '../openStreetMap/OpenStreetMap';
 
 const AuthorPage = ({ info }) => (
   <div className="author-page">
@@ -17,6 +18,7 @@ const AuthorPage = ({ info }) => (
     <VideoOverlay video={info.videos} videosnap={info.videosnap} />
     <div className="map-component">
       <GoogleMapComponent info={info.locations} />
+      <OpenStreetMap info={info.locations} />
     </div>
   </div>
 );

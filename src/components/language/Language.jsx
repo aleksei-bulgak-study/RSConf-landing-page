@@ -71,8 +71,13 @@ function LanguageButton({
 LanguageButton.propTypes = {
   language: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
-  t: PropTypes.func.isRequired,
-  isActive: PropTypes.func.isRequired,
+  t: PropTypes.func,
+  isActive: PropTypes.func,
+};
+
+LanguageButton.defaultProps = {
+  t: value => value,
+  isActive: () => false,
 };
 
 Language.propTypes = {

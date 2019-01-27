@@ -57,9 +57,13 @@ class FullList extends React.Component {
 }
 
 FullList.propTypes = {
-  t: PropTypes.func.isRequired,
+  t: PropTypes.func,
   authorsInfo: PropTypes.arrayOf(PropTypes.object).isRequired,
   language: PropTypes.string,
+};
+
+FullList.defaultProps = {
+  t: value => value,
 };
 
 FullList.defaultProps = {

@@ -13,7 +13,7 @@ const CONSTANTS = {
 
 const GoogleMapInternalComponent = withScriptjs(withGoogleMap(({ lat, lng }) => (
   <GoogleMap
-    defaultZoom={8}
+    defaultZoom={11}
     defaultCenter={{ lat, lng }}
   >
     <Marker position={{ lat, lng }} />

@@ -1,0 +1,19 @@
+.about-us {
+  display: flex;
+  height: 80vh;
+  .center-content {
+    margin: auto;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+  }
+}
+
+.our-developers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}

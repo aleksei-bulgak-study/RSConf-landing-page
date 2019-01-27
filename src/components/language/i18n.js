@@ -1,6 +1,9 @@
 import i18n from 'i18next';
 import XHR from 'i18next-xhr-backend';
 import { reactI18nextModule } from 'react-i18next';
+import translations from '../../data/translations/translations.json';
+
+const SUPPORTED_TRANSLATIONS = ['en', 'ru', 'by'];
 
 i18n
   .use(XHR)
@@ -17,41 +20,7 @@ i18n
     },
   });
 
-i18n.addResourceBundle('en', 'translation', {
-  en: 'eng',
-  ru: 'ru',
-  by: 'by',
-  title: 'Poets of Belarus',
-  home: 'Home',
-  author_of_the_day: 'Author of the day',
-  author_search: 'Author Search',
-  team: 'The project team',
-  authors: 'Authors',
-  search: 'Search',
-});
-i18n.addResourceBundle('ru', 'translation', {
-  en: 'англ',
-  ru: 'рус',
-  by: 'бел',
-  title: 'Поэты Беларуси',
-  home: 'На Главную',
-  author_of_the_day: 'Поэт дня',
-  author_search: 'Поиск поэтов',
-  team: 'Наша команда',
-  authors: 'Поэты',
-  search: 'Поиск',
-});
-i18n.addResourceBundle('by', 'translation', {
-  en: 'англ',
-  ru: 'рус',
-  by: 'бел',
-  title: 'Паэты Беларусі',
-  home: 'На Галоуную',
-  author_of_the_day: 'Паэт дня',
-  author_search: 'Пошук па паэтам',
-  team: 'Каманда',
-  authors: 'Паэты',
-  search: 'Пошук',
-});
+SUPPORTED_TRANSLATIONS
+  .forEach(lang => i18n.addResourceBundle(lang, 'translation', translations[lang]));
 
 export default i18n;
