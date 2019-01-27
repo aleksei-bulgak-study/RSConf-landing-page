@@ -1,6 +1,7 @@
 .homepage {
   display:flex;
-  width:800px;
+  width:80%;
+  height:80vh;
   flex-direction:column;
   justify-content: space-around;
   align-items: center;
