@@ -11,6 +11,8 @@ const VideoOverlay = ({ video, videosnap }) => {
       if (overlay.style.display) {
         overlay.style.display = '';
         videoContainer.style.display = '';
+        document.querySelector('iframe')
+          .contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
       } else {
         overlay.style.display = 'block';
         videoContainer.style.display = 'block';
