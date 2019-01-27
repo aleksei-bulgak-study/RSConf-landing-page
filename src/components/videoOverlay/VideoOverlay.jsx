@@ -17,15 +17,18 @@ const VideoOverlay = ({ video, videosnap }) => {
       }
     }
   }
-  return (
-    <div className="video-list" role="button" tabIndex="0" onKeyPress={click} onClick={click}>
-      <img className="videosnap" alt="{video}" src={videosnap} />
-      <div className="video-overlay" />
-      <div className="video">
-        <iframe title={video} src={video} allowFullScreen />
+  if (video && videosnap) {
+    return (
+      <div className="video-list" role="button" tabIndex="0" onKeyPress={click} onClick={click}>
+        <img className="videosnap" alt={video} src={videosnap} />
+        <div className="video-overlay" />
+        <div className="video">
+          <iframe title={video} src={video} allowFullScreen />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
+  return null;
 };
 
 VideoOverlay.propTypes = {
