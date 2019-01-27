@@ -23,8 +23,8 @@
     "locations": [
       {
         "name": "Слуцк",
-        "latitude": 53.01,
-        "longitude": 27.33
+        "latitude": 53.0333332,
+        "longitude": 27.5666644
       }
     ],
     "works": [
@@ -84,8 +84,8 @@
     "locations": [
       {
         "name": "Мінск",
-        "latitude": 53.55,
-        "longitude": 27.33
+        "latitude": 53.8999964,
+        "longitude": 27.5666644
       }
     ],
     "works": [
@@ -244,8 +244,8 @@
     "locations": [
       {
         "name": "Вильнюс",
-        "latitude": 54.41,
-        "longitude": 25.17
+        "latitude": 54.68916,
+        "longitude": 25.2798
       }
     ],
     "works": [
@@ -327,8 +327,8 @@
     "locations": [
       {
         "name": "Минск",
-        "latitude": 53.55,
-        "longitude": 27.33
+        "latitude": 53.8999964,
+        "longitude": 27.5666644
       }
     ],
     "works": [

@@ -11,10 +11,12 @@ const AboutUs = () => {
   });
 
   return (
-    <div className="about-us">
-      <h2>Our project team</h2>
-      <div className="our-developers">{generateDevelopers(DEVELOPERS)}</div>
-    </div>
+    <section className="about-us">
+      <div className="center-content">
+        <h2>Our project team</h2>
+        <ul className="our-developers">{generateDevelopers(DEVELOPERS)}</ul>
+      </div>
+    </section>
   );
 };
 
