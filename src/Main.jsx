@@ -59,6 +59,7 @@ class Main extends React.Component {
                     {...props}
                     language={language}
                     authorsInfo={data}
+                    t={t}
                   />
                 )}
               />

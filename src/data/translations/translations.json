@@ -15,7 +15,8 @@
     "author-video": "Video about author",
     "hometown": "Hometown location",
     "author-works": "Author works",
-    "authors-activities": "Author`s activities"
+    "authors-activities": "Author`s activities",
+    "search-placeholder": "search author"
   },
   "ru": {
     "team_title": "Наша команда",
@@ -33,7 +34,8 @@
     "author-video": "Видео об поэте",
     "hometown": "Место проживания",
     "author-works": "Работы автора",
-    "authors-activities": "Биография"
+    "authors-activities": "Биография",
+    "search-placeholder": "поиск автора"
   },
   "by": {
     "team_title": "Наша праектная каманда",
@@ -51,6 +53,7 @@
     "author-video": "Вiдеа аб паэце",
     "hometown": "Месца жыхарства",
     "author-works": "Працы паэта",
-    "authors-activities": "Бияграфiя"
+    "authors-activities": "Бияграфiя",
+    "search-placeholder": "шукаць па аутарам"
   }
 }
