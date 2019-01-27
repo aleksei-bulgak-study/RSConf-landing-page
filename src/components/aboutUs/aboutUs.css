@@ -1,8 +1,9 @@
 .about-us {
   display: -webkit-box;
   display: -ms-flexbox;
+  width: 80%;
+  padding: 10px;
   display: flex;
-  height: 80vh;
 }
 
 .about-us .center-content {

@@ -17,11 +17,12 @@ body {
 }
 
 .main {
-  width: 100%;
+  width: 80%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto 5%;
 }
 
 .header {
@@ -40,10 +41,4 @@ body {
 
 h2 {
   font-size: 30px;
-}
-
-.lang {
-  position:absolute;
-  top:0;
-  right:50px;
 }
