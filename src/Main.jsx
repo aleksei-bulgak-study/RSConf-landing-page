@@ -61,11 +61,11 @@ class Main extends React.Component {
             <Route
               exact
               path="/"
-              component={props => <Home {...props} authorsInfo={data} />}
+              component={props => <Home {...props} t={t} authorsInfo={data} />}
             />
             <Route
               path="/authorOfTheDay"
-              component={props => <AuthorOfTheDay {...props} authorsInfo={data} />}
+              component={props => <AuthorOfTheDay {...props} t={t} authorsInfo={data} />}
             />
             <Route
               path="/search"
@@ -77,7 +77,7 @@ class Main extends React.Component {
                 />
               )}
             />
-            <Route path="/aboutus" component={AboutUs} />
+            <Route path="/aboutus" component={withNamespaces()(AboutUs)} />
             <Route
               path="/fulllist"
               component={props => (
@@ -109,7 +109,11 @@ class Main extends React.Component {
 }
 
 Main.propTypes = {
-  t: PropTypes.func.isRequired,
+  t: PropTypes.func,
+};
+
+Main.defaultProps = {
+  t: value => value,
 };
 
 export default withNamespaces()(Main);

@@ -1,0 +1,41 @@
+{
+  "en": {
+    "team_title": "Our project team",
+    "en": "eng",
+    "ru": "ru",
+    "by": "by",
+    "title": "CodeJam",
+    "home": "Home",
+    "author_of_the_day": "Author of the day",
+    "author_search": "Author Search",
+    "team": "The project team",
+    "authors": "Authors",
+    "search": "Search"
+  },
+  "ru": {
+    "team_title": "Наша команда",
+    "en": "англ",
+    "ru": "рус",
+    "by": "бел",
+    "title": "Код Джем",
+    "home": "На Главную",
+    "author_of_the_day": "Поэт дня",
+    "author_search": "Поиск поэтов",
+    "team": "Наша команда",
+    "authors": "Поэты",
+    "search": "Поиск"
+  },
+  "by": {
+    "team_title": "Наша праектная каманда",
+    "en": "англ",
+    "ru": "рус",
+    "by": "бел",
+    "title": "Код Джэм",
+    "home": "На Галоуную",
+    "author_of_the_day": "Паэт дня",
+    "author_search": "Пошук па паэтам",
+    "team": "Каманда",
+    "authors": "Паэты",
+    "search": "Пошук"
+  }
+}

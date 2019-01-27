@@ -11,7 +11,7 @@ const defineAuthors = (authors) => {
   return authors[currentAuthorsIndex];
 };
 
-const AuthorOfTheDay = ({ authorsInfo }) => {
+const AuthorOfTheDay = ({ authorsInfo, t }) => {
   const author = defineAuthors(authorsInfo);
   const authorsPhoto = author.titleImage;
   const authorsName = `${author.firstName} ${author.lastName}`;
@@ -19,7 +19,7 @@ const AuthorOfTheDay = ({ authorsInfo }) => {
 
   return (
     <div className="author-of-the-day">
-      <h2>Author of the day</h2>
+      <h2>{t('author_of_the_day')}</h2>
       <Link className="author-link" key={author.firstName + author.lastName} to={address}>
         <img src={authorsPhoto} alt={authorsName} />
         <span>{authorsName}</span>
@@ -30,10 +30,12 @@ const AuthorOfTheDay = ({ authorsInfo }) => {
 
 AuthorOfTheDay.propTypes = {
   authorsInfo: PropTypes.arrayOf(PropTypes.object),
+  t: PropTypes.func,
 };
 
 AuthorOfTheDay.defaultProps = {
   authorsInfo: [],
+  t: value => value,
 };
 
 export default AuthorOfTheDay;
