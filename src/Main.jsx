@@ -11,10 +11,10 @@ import {
   Language,
 } from './components';
 import './styles/style.css';
-import Fullist from './components/fulllist/Fullist';
+import FullList from './components/fulllist/Fullist';
 import data from './data/authors.json';
 
-const SearchWrapped = withNamespaces()(Search);
+const FullListWrapped = withNamespaces()(FullList);
 
 class Main extends React.Component {
   constructor(props) {
@@ -66,7 +66,7 @@ class Main extends React.Component {
             <Route
               path="/search"
               component={props => (
-                <SearchWrapped
+                <Search
                   {...props}
                   language={language}
                   authorsInfo={data}
@@ -74,7 +74,16 @@ class Main extends React.Component {
               )}
             />
             <Route path="/aboutus" component={AboutUs} />
-            <Route path="/fulllist" component={Fullist} />
+            <Route
+              path="/fulllist"
+              component={props => (
+                <FullListWrapped
+                  {...props}
+                  language={language}
+                  authorsInfo={data}
+                />
+              )}
+            />
             <Route
               path="/authorPage/:firstName/:lastName"
               component={
