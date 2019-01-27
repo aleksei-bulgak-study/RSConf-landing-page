@@ -30,14 +30,16 @@
 
 .search-shape {
   margin: 200px auto 50px;
+  min-width: 50%;
 }
 
 .search-shape input {
   padding: 7px 10px;
-  width: 300px;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
   outline: none;
+  font-size: 2em;
+  width: 100%;
 }
 
 .search-result {
@@ -49,7 +51,7 @@
 
 .search-result .card {
   margin: 5px auto;
-  width: 700px;
+  width: 90%;
   -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
           box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
 }
