@@ -9,6 +9,7 @@ body {
   height: 100vh;
   font-size: 16px;
   font-family: sans-serif, serif;
+  position: relative;
 }
 
 #root {
@@ -17,17 +18,10 @@ body {
 }
 
 .main {
-  width: 100%;
-  position: relative;
+  width: 100%;  
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.header {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .content {
@@ -42,8 +36,3 @@ h2 {
   font-size: 30px;
 }
 
-.lang {
-  position:absolute;
-  top:0;
-  right:50px;
-}

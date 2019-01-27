@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, NavLink, HashRouter } from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 import { withNamespaces } from 'react-i18next';
 import PropTypes from 'prop-types';
 import {
@@ -9,6 +9,7 @@ import {
   Search,
   OpenAuthorComponent,
   Language,
+  Header,
 } from './components';
 import './styles/style.css';
 import FullList from './components/fulllist/Fullist';
@@ -37,68 +38,33 @@ class Main extends React.Component {
     return (
       <HashRouter>
         <div className="main">
-          <h1>{t('title')}</h1>
-          <ul className="header">
-            <li>
-              <NavLink exact to="/">
-                {t('home')}
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/authorOfTheDay">{t('author_of_the_day')}</NavLink>
-            </li>
-            <li>
-              <NavLink to="/search">{t('author_search')}</NavLink>
-            </li>
-            <li>
-              <NavLink to="/aboutus">{t('team')}</NavLink>
-            </li>
-            <li>
-              <NavLink to="/fulllist">{t('authors')}</NavLink>
-            </li>
-          </ul>
+          <Header translate={t} />
           <div className="content">
-            <Route
-              exact
-              path="/"
-              component={props => <Home {...props} authorsInfo={data} />}
-            />
+            <Route exact path="/" component={props => <Home {...props} authorsInfo={data} />} />
             <Route
               path="/authorOfTheDay"
               component={props => <AuthorOfTheDay {...props} authorsInfo={data} />}
             />
             <Route
               path="/search"
-              component={props => (
-                <Search
-                  {...props}
-                  language={language}
-                  authorsInfo={data}
-                />
-              )}
+              component={props => <Search {...props} language={language} authorsInfo={data} />}
             />
             <Route path="/aboutus" component={AboutUs} />
             <Route
               path="/fulllist"
               component={props => (
-                <FullListWrapped
-                  {...props}
-                  language={language}
-                  authorsInfo={data}
-                />
+                <FullListWrapped {...props} language={language} authorsInfo={data} />
               )}
             />
             <Route
               path="/authorPage/:firstName/:lastName"
-              component={
-                params => (
-                  <OpenAuthorComponent
-                    authors={data}
-                    firstName={params.match.params.firstName}
-                    lastName={params.match.params.lastName}
-                  />
-                )
-              }
+              component={params => (
+                <OpenAuthorComponent
+                  authors={data}
+                  firstName={params.match.params.firstName}
+                  lastName={params.match.params.lastName}
+                />
+              )}
             />
           </div>
           <Language onLanguageChangeHanler={this.onLanguageChangeHanler} />
