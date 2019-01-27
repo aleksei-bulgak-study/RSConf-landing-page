@@ -19,7 +19,7 @@ body {
 }
 
 .main {
-  width: 100%;  
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,12 +29,24 @@ body {
 
 .content {
   width: 100%;
-  padding: 15px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+h1 {
+  font-size: 2.5em;
+  color: #858585;
+}
+
 h2 {
-  font-size: 30px;
+  font-size: 2em;
+}
+
+
+.wrap {
+  width: 80%;
+  height: 87vh;
+  display: flex;
+  justify-content: center;
 }

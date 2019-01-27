@@ -50,7 +50,11 @@ class Main extends React.Component {
               />
               <Route
                 path="/authorOfTheDay"
-                component={props => <AuthorOfTheDay {...props} t={t} authorsInfo={data} />}
+                component={props => (
+                  <div className="wrap">
+                    <AuthorOfTheDay {...props} t={t} authorsInfo={data} />
+                  </div>
+                )}
               />
               <Route
                 path="/search"
@@ -67,11 +71,7 @@ class Main extends React.Component {
               <Route
                 path="/fulllist"
                 component={props => (
-                  <FullListWrapped
-                    {...props}
-                    language={language}
-                    authorsInfo={data}
-                  />
+                  <FullListWrapped {...props} language={language} authorsInfo={data} />
                 )}
               />
               <Route
