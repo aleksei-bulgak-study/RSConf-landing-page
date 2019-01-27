@@ -217,7 +217,8 @@
       "http://karotkizmest.by/images/biadulia.jpg",
       "https://gdb.rferl.org/4B28DD40-7FE8-421A-A231-0C5432F965F5_w650_r0_s.jpg"
     ],
-    "videos": "https://www.youtube.com/watch?v=GB_rlueYscM"
+    "videos": "https://www.youtube.com/watch?v=GB_rlueYscM",
+    "videosnap": "https://i.ytimg.com/vi/GB_rlueYscM/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAmLQpC1PjU2nY_qubVY4uoBONxBw"
   },
   {
     "translation": {
@@ -301,7 +302,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Belarusian_writers_1920.jpg/280px-Belarusian_writers_1920.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Alakhnovich1.jpg/300px-Alakhnovich1.jpg"
     ],
-    "videos": "https://www.youtube.com/watch?v=GB_rlueYscM"
+    "videos": "https://www.youtube.com/watch?v=GB_rlueYscM",
+    "videosnap": "https://i.ytimg.com/vi/GB_rlueYscM/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAmLQpC1PjU2nY_qubVY4uoBONxBw"
   },
   {
     "translation": {
@@ -392,6 +394,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/HakubokAlachnovich.jpg/280px-HakubokAlachnovich.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Belarusian_writers_1920.jpg/280px-Belarusian_writers_1920.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Alakhnovich1.jpg/300px-Alakhnovich1.jpg"
-    ]
+    ],
+    "videos": "https://youtu.be/y7q6WXFqP2I",
+    "videosnap": "https://i.ytimg.com/vi/y7q6WXFqP2I/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCdBHDlAwnIl3Bucf1zTcsPxseKlA"
   }
 ]
