@@ -1,11 +1,11 @@
 .gallery-container {
   display:flex;
-  height:200px;
-  width:600px;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .gallery-item {
   height:200px;
+  margin: 1% 1%;
 }

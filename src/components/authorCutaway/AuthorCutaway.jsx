@@ -5,7 +5,7 @@ import './authorCutaway.css';
 const AuthorCutaway = ({ firstName, lastName, avatar }) => (
   <div className="autor-cutaway">
     <img className="author-avatar" src={avatar} alt={lastName} />
-    <span>{`${firstName} ${lastName}`}</span>
+    <h1>{`${firstName} ${lastName}`}</h1>
   </div>
 );
 

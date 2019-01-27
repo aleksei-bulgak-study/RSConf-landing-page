@@ -10,7 +10,12 @@
     "author_search": "Author Search",
     "team": "The project team",
     "authors": "Authors",
-    "search": "Search"
+    "search": "Search",
+    "photos": "Photo gallery",
+    "author-video": "Video about author",
+    "hometown": "Hometown location",
+    "author-works": "Author works",
+    "authors-activities": "Author`s activities"
   },
   "ru": {
     "team_title": "Наша команда",
@@ -23,7 +28,12 @@
     "author_search": "Поиск поэтов",
     "team": "Наша команда",
     "authors": "Поэты",
-    "search": "Поиск"
+    "search": "Поиск",
+    "photos": "Фото галлерея",
+    "author-video": "Видео об поэте",
+    "hometown": "Место проживания",
+    "author-works": "Работы автора",
+    "authors-activities": "Биография"
   },
   "by": {
     "team_title": "Наша праектная каманда",
@@ -36,6 +46,11 @@
     "author_search": "Пошук па паэтам",
     "team": "Каманда",
     "authors": "Паэты",
-    "search": "Пошук"
+    "search": "Пошук",
+    "photos": "Фота галярэя",
+    "author-video": "Вiдеа аб паэце",
+    "hometown": "Месца жыхарства",
+    "author-works": "Працы паэта",
+    "authors-activities": "Бияграфiя"
   }
 }

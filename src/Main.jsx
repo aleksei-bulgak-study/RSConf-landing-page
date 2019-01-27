@@ -17,6 +17,7 @@ import data from './data/authors.json';
 import Footer from './components/footer/Footer';
 
 const FullListWrapped = withNamespaces()(FullList);
+const OpenAuthorComponentWrapped = withNamespaces()(OpenAuthorComponent);
 
 class Main extends React.Component {
   constructor(props) {
@@ -76,7 +77,7 @@ class Main extends React.Component {
                 path="/authorPage/:firstName/:lastName"
                 component={
                   params => (
-                    <OpenAuthorComponent
+                    <OpenAuthorComponentWrapped
                       authors={data}
                       firstName={params.match.params.firstName}
                       lastName={params.match.params.lastName}
