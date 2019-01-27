@@ -4,7 +4,6 @@ import {
   Map,
   TileLayer,
   Marker,
-  Popup,
 } from 'react-leaflet';
 import './openStreetMap.css';
 import 'leaflet/dist/leaflet.css';
