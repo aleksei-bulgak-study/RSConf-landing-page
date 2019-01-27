@@ -49,40 +49,32 @@ class Main extends React.Component {
               />
               <Route
                 path="/authorOfTheDay"
-                component={props => <AuthorOfTheDay {...props} t={t} authorsInfo={data} />}
+                component={props => (
+                  <div className="wrap">
+                    <AuthorOfTheDay {...props} t={t} authorsInfo={data} />
+                  </div>
+                )}
               />
               <Route
                 path="/search"
-                component={props => (
-                  <Search
-                    {...props}
-                    language={language}
-                    authorsInfo={data}
-                  />
-                )}
+                component={props => <Search {...props} language={language} authorsInfo={data} />}
               />
               <Route path="/aboutus" component={withNamespaces()(AboutUs)} />
               <Route
                 path="/fulllist"
                 component={props => (
-                  <FullListWrapped
-                    {...props}
-                    language={language}
-                    authorsInfo={data}
-                  />
+                  <FullListWrapped {...props} language={language} authorsInfo={data} />
                 )}
               />
               <Route
                 path="/authorPage/:firstName/:lastName"
-                component={
-                  params => (
-                    <OpenAuthorComponent
-                      authors={data}
-                      firstName={params.match.params.firstName}
-                      lastName={params.match.params.lastName}
-                    />
-                  )
-                }
+                component={params => (
+                  <OpenAuthorComponent
+                    authors={data}
+                    firstName={params.match.params.firstName}
+                    lastName={params.match.params.lastName}
+                  />
+                )}
               />
             </div>
           </div>

@@ -34,8 +34,17 @@ body {
 
 h1 {
   font-size: 2.5em;
+  color: #858585;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2em;
+}
+
+
+.wrap {
+  width: 80%;
+  height: 87vh;
+  display: flex;
+  justify-content: center;
 }

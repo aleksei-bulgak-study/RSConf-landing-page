@@ -19,10 +19,9 @@ const Home = props => (
       </p>
     </article>
 
-    {/* <article className="author-of-the-day">
-      <h2>Автор Дня!</h2>
+    <article className="author-of-the-day">
       <AuthorOfTheDay {...props} />
-    </article> */}
+    </article>
   </div>
 );
 
