@@ -3,26 +3,27 @@ import { PropTypes } from 'prop-types';
 import './videoOverlay.css';
 
 const VideoOverlay = ({ video, videosnap }) => {
-  function click() {
-    const overlay = document.querySelector('.video-overlay');
-    const videoContainer = document.querySelector('.video-video');
-    overlay.style.display = 'block';
-    videoContainer.style.display = 'block';
-    videoContainer.innerHTML = `<iframe width=560 height=315 src=${video} frameborder=0 allowfullscreen></iframe>`;
-    const closeVideo = () => {
-      document.removeEventListener('click', closeVideo);
-      overlay.style.display = 'none';
-      videoContainer.style.display = 'none';
-      videoContainer.innerHTML = '';
-    };
-
-    document.addEventListener('click', closeVideo);
+  function click(event) {
+    const videoList = event.target.closest('.video-list');
+    if (videoList) {
+      const overlay = videoList.querySelector('.video-overlay');
+      const videoContainer = videoList.querySelector('.video');
+      if (overlay.style.display) {
+        overlay.style.display = '';
+        videoContainer.style.display = '';
+      } else {
+        overlay.style.display = 'block';
+        videoContainer.style.display = 'block';
+      }
+    }
   }
   return (
-    <div className="video-list">
-      <img className="videosnap" alt="" src={videosnap} onClick={click} />
+    <div className="video-list" role="button" tabIndex="0" onKeyPress={click} onClick={click}>
+      <img className="videosnap" alt="{video}" src={videosnap} />
       <div className="video-overlay" />
-      <div className="video-video" />
+      <div className="video">
+        <iframe title={video} src={video} allowFullScreen />
+      </div>
     </div>
   );
 };
