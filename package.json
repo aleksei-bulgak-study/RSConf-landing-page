@@ -1,5 +1,5 @@
 {
-  "name": "dashboard",
+  "name": "rss_codejam",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +9,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-google-maps": "^9.4.5",
     "react-i18next": "^9.0.8",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.3",
@@ -41,5 +42,16 @@
   "devDependencies": {
     "eslint-config-airbnb": "^17.1.0"
   },
-  "homepage": "https://aleksei-bulgak-study.github.io/RSConf-landing-page/"
+  "homepage": "https://aleksei-bulgak-study.github.io/RSConf-landing-page/",
+  "description": "rss code jam\r [![Build Status](https://travis-ci.org/aleksei-bulgak-study/RSConf-landing-page.svg?branch=master)](https://travis-ci.org/aleksei-bulgak-study/RSConf-landing-page)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksei-bulgak-study/RSConf-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleksei-bulgak-study/RSConf-landing-page/issues"
+  }
 }

@@ -6,6 +6,7 @@ import AuthorWorks from '../authorWorks/AuthorWorks';
 import './authorPage.css';
 import PhotoGallery from '../photoGallery/PhotoGallery';
 import VideoOverlay from '../videoOverlay/VideoOverlay';
+import GoogleMapComponent from '../googleMaps/GoogleMapComponent';
 
 const AuthorPage = ({ info }) => (
   <div className="author-page">
@@ -14,9 +15,12 @@ const AuthorPage = ({ info }) => (
     <TimeLine className="timeline" info={info.timeline} />
     <PhotoGallery photos={info.images} />
     <VideoOverlay video={info.videos} videosnap={info.videosnap} />
-    <div className="map-component">map-component</div>
+    <div className="map-component">
+      <GoogleMapComponent info={info.locations} />
+    </div>
   </div>
 );
+
 
 AuthorPage.propTypes = {
   info: PropTypes.shape({

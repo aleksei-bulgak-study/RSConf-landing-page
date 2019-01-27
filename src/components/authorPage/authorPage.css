@@ -1,3 +1,30 @@
+.author-image {
+  grid-area: image;
+}
+
+.list-of-works{
+  grid-area:  works;
+}
+
+.timeline {
+  grid-area: timeline;
+}
+
+.photo-list {
+  grid-area: photos;
+}
+
+.video-list {
+  grid-area: video;
+  position:relative;
+}
+
+.map-component {
+  grid-area: map;
+  min-height: 40vh;
+  width: 100%;
+}
+
 .author-page {
   width: 90%;
   padding: 30px;
@@ -7,3 +34,21 @@
   align-items: center;
 }
 
+.video-overlay {
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1;
+  height:100%;
+  width:100%;
+  background:#ffffff;
+  opacity:0.6;
+  display:none;    
+}
+.video-video {
+  display:none;
+  position: absolute;
+  top:0px;
+  left:-250px;
+  z-index:2;
+}
