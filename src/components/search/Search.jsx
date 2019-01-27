@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import './search.css';
 
 const renderCard = (data) => {
-  console.log(data);
   return (
     <section className="search-result col">
       <ul>
