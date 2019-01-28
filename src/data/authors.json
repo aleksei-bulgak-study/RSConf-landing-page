@@ -83,7 +83,7 @@
     "titleImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Ryhor_Baradulin.jpg/250px-Ryhor_Baradulin.jpg",
     "locations": [
       {
-        "name": "Мінск",
+        "name": "Минск",
         "latitude": 53.8999964,
         "longitude": 27.5666644
       }
@@ -161,7 +161,7 @@
     "titleImage": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Zmitrok_Biadulia1.jpg",
     "locations": [
       {
-        "name": "Лагойскі раён, Мінская вобласць",
+        "name": "Лагойский район",
         "latitude": 53.55,
         "longitude": 27.33
       }

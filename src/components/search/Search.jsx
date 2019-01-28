@@ -3,35 +3,27 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './search.css';
 
-const renderCard = (data) => {
-  return (
-    <section className="search-result col">
-      <ul>
-        {data.map(({ firstName, lastName, titleImage }) => {
-          const address = `/authorPage/${firstName}/${lastName}`;
-          return (
-            <li key={address} className="card row">
-              <img alt="img" src={titleImage} />
-              <div className="row">
-                <Link
-                  className="author-name"
-                  key={firstName + lastName}
-                  to={address}
-                >
-                  { firstName }
-                  {' '}
-                  { lastName}
-                </Link>
-
-              </div>
-            </li>
-          );
-        })
-        }
-      </ul>
-    </section>
-  );
-};
+const renderCard = data => (
+  <section className="search-result col">
+    <ul>
+      {data.map(({ firstName, lastName, titleImage }) => {
+        const address = `/authorPage/${firstName}/${lastName}`;
+        return (
+          <li key={address} className="card row">
+            <img alt="img" src={titleImage} />
+            <div className="row">
+              <Link className="author-name" key={firstName + lastName} to={address}>
+                {firstName}
+                {' '}
+                {lastName}
+              </Link>
+            </div>
+          </li>
+        );
+      })}
+    </ul>
+  </section>
+);
 
 class Search extends React.Component {
   constructor(props) {
@@ -40,10 +32,15 @@ class Search extends React.Component {
   }
 
   handleChange(event) {
-    const { authorsInfo } = this.props;
     const inputValue = event.target.value.toLowerCase();
-    if (inputValue.length > 0) {
-      const arr = authorsInfo.filter(({ firstName, lastName }) => firstName.toLowerCase().search(inputValue) >= 0 || lastName.toLowerCase().search(inputValue) >= 0); // eslint-disable-line
+    const { authorsInfo } = this.props;
+    if (inputValue) {
+      const arr = authorsInfo.filter(({ firstName, lastName, locations }) => {
+        return firstName.toLowerCase().includes(inputValue)
+          || lastName.toLowerCase().includes(inputValue)
+          || locations[0].name.toLowerCase().includes(inputValue);
+      });
+      this.authorsByName = arr;
       this.setState({ searchRequest: arr });
     } else {
       this.setState({ searchRequest: [] });
@@ -57,7 +54,11 @@ class Search extends React.Component {
       <div className="container">
         <div className="col">
           <section className="search-shape">
-            <input type="text" placeholder={t('search-placeholder')} onChange={this.handleChange.bind(this)} />
+            <input
+              type="text"
+              placeholder={t('search-placeholder')}
+              onChange={this.handleChange.bind(this)}
+            />
           </section>
           {renderCard(searchRequest)}
         </div>
@@ -67,9 +68,7 @@ class Search extends React.Component {
 }
 
 Search.propTypes = {
-  authorsInfo: PropTypes.arrayOf(
-    PropTypes.object,
-  ),
+  authorsInfo: PropTypes.arrayOf(PropTypes.object),
   t: PropTypes.func,
 };
 Search.defaultProps = {

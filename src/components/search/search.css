@@ -29,11 +29,15 @@
 
 .search-shape {
   margin: 100px auto 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-width: 50%;
 }
 
 .search-shape input {
   padding: 7px 10px;
+  margin-bottom: 15px;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
   outline: none;
@@ -82,11 +86,8 @@
   }
   .search-shape {
     margin: 50px 0 10px;
-    display: flex;
-    justify-content: center;
   }
   .search-shape input {
     width: 90%;
   }
 }
-/*# sourceMappingURL=search.css.map */
