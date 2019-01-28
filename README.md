@@ -8,3 +8,4 @@ rss code jam
 * React was a new framework for almost all team members
 * In some cases it was quite difficult to integrate multiple different component
 * Responsivness
+* Difficulty with a React especially with lifecycle and state
