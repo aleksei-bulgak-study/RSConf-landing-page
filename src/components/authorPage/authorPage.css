@@ -57,3 +57,9 @@ h2.section-title {
   color: #858585;
   text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+  .author-page {
+    width: 100%;
+  } 
+}

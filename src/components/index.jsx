@@ -8,3 +8,5 @@ export { default as AuthorPage } from './authorPage/AuthorPage';
 export { default as Language } from './language/Language';
 export { default as OpenAuthorComponent } from './authorWrapper/OpenAuthorComponent';
 export { default as Header } from './header/Header';
+export { default as Footer } from './footer/Footer';
+export { default as FullList } from './fulllist/Fullist';
