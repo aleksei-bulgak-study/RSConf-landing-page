@@ -10,3 +10,4 @@ export { default as OpenAuthorComponent } from './authorWrapper/OpenAuthorCompon
 export { default as Header } from './header/Header';
 export { default as Footer } from './footer/Footer';
 export { default as FullList } from './fulllist/Fullist';
+export { default as Difficulties } from './difficulties/Difficulties';

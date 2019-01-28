@@ -54,6 +54,9 @@ class Header extends React.Component {
             <li>
               <NavLink to="/fulllist">{translate('authors')}</NavLink>
             </li>
+            <li>
+              <NavLink to="/difficulties">{translate('difficulties_link')}</NavLink>
+            </li>
           </ul>
         </CheeseburgerMenu>
         <div className="hamburger">

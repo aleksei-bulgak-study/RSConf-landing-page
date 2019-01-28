@@ -12,12 +12,14 @@ import {
   Header,
   FullList,
   Footer,
+  Difficulties,
 } from './components';
 import './styles/style.css';
 import data from './data/authors.json';
 
 const FullListWrapped = withNamespaces()(FullList);
 const OpenAuthorComponentWrapped = withNamespaces()(OpenAuthorComponent);
+const DifficultiesWrapped = withNamespaces()(Difficulties);
 
 class Main extends React.Component {
   constructor(props) {
@@ -78,6 +80,10 @@ class Main extends React.Component {
                     lastName={params.match.params.lastName}
                   />
                 )}
+              />
+              <Route
+                path="/difficulties"
+                component={DifficultiesWrapped}
               />
             </div>
           </div>

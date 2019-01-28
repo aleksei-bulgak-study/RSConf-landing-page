@@ -17,7 +17,9 @@
     "author-works": "Author works",
     "authors-activities": "Author`s activities",
     "search-placeholder": "search author",
-    "search-placeholder-city": "city"
+    "search-placeholder-city": "city",
+    "difficulties_link": "Difficulties",
+    "difficulties_title": "Difficulties encountered during development"
   },
   "ru": {
     "team_title": "Наша команда",
@@ -37,7 +39,9 @@
     "author-works": "Работы автора",
     "authors-activities": "Биография",
     "search-placeholder": "поиск автора",
-    "search-placeholder-city": "город"
+    "search-placeholder-city": "город",
+    "difficulties_link": "Сложности",
+    "difficulties_title": "Сложности с которыми столкнулись во время разработки"
   },
   "by": {
     "team_title": "Наша праектная каманда",
@@ -57,6 +61,8 @@
     "author-works": "Працы паэта",
     "authors-activities": "Бияграфiя",
     "search-placeholder": "шукаць па аутарам",
-    "search-placeholder-city": "горад"
+    "search-placeholder-city": "горад",
+    "difficulties_link": "Цяжкастi",
+    "difficulties_title": "Цяжкастi з якiмi сутыкнулiся пад чаз выканання работы"
   }
 }
