@@ -10,11 +10,11 @@ import {
   OpenAuthorComponent,
   Language,
   Header,
+  FullList,
+  Footer,
 } from './components';
 import './styles/style.css';
-import FullList from './components/fulllist/Fullist';
 import data from './data/authors.json';
-import Footer from './components/footer/Footer';
 
 const FullListWrapped = withNamespaces()(FullList);
 const OpenAuthorComponentWrapped = withNamespaces()(OpenAuthorComponent);
@@ -59,12 +59,7 @@ class Main extends React.Component {
               <Route
                 path="/search"
                 component={props => (
-                  <Search
-                    {...props}
-                    language={language}
-                    authorsInfo={data}
-                    t={t}
-                  />
+                  <Search {...props} language={language} authorsInfo={data} t={t} />
                 )}
               />
               <Route path="/aboutus" component={withNamespaces()(AboutUs)} />
@@ -76,15 +71,13 @@ class Main extends React.Component {
               />
               <Route
                 path="/authorPage/:firstName/:lastName"
-                component={
-                  params => (
-                    <OpenAuthorComponentWrapped
-                      authors={data}
-                      firstName={params.match.params.firstName}
-                      lastName={params.match.params.lastName}
-                    />
-                  )
-                }
+                component={params => (
+                  <OpenAuthorComponentWrapped
+                    authors={data}
+                    firstName={params.match.params.firstName}
+                    lastName={params.match.params.lastName}
+                  />
+                )}
               />
             </div>
           </div>

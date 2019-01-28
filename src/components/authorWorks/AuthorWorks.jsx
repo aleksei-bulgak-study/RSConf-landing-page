@@ -26,10 +26,12 @@ const AuthorWorks = ({ works, t }) => {
 
 AuthorWorks.propTypes = {
   works: PropTypes.arrayOf(PropTypes.object),
+  t: PropTypes.func,
 };
 
 AuthorWorks.defaultProps = {
   works: {},
+  t: value => value,
 };
 
 export default AuthorWorks;

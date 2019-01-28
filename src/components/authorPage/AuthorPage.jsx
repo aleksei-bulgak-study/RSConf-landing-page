@@ -16,15 +16,12 @@ const AuthorPage = ({ info, t }) => (
     <TimeLine className="timeline" info={info.timeline} t={t} />
     <h2 className="section-title">{t('photos')}</h2>
     <PhotoGallery photos={info.images} />
-    {
-      info.videos
-      && (
-        <React.Fragment>
-          <h2 className="section-title">{t('author-video')}</h2>
-          <VideoOverlay video={info.videos} videosnap={info.videosnap} />
-        </React.Fragment>
-      )
-    }
+    {info.videos && (
+      <React.Fragment>
+        <h2 className="section-title">{t('author-video')}</h2>
+        <VideoOverlay video={info.videos} videosnap={info.videosnap} />
+      </React.Fragment>
+    )}
     <h2 className="section-title">{t('hometown')}</h2>
     <div className="map-component">
       <GoogleMapComponent info={info.locations} />
@@ -32,7 +29,6 @@ const AuthorPage = ({ info, t }) => (
     </div>
   </div>
 );
-
 
 AuthorPage.propTypes = {
   info: PropTypes.shape({
