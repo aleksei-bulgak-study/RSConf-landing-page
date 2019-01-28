@@ -9,3 +9,6 @@ rss code jam
 * In some cases it was quite difficult to integrate multiple different component
 * Responsivness
 * Difficulty with a React especially with lifecycle and state
+* It was really difficult to split work between team members without intercection/merge conflicts in some files
+* It is not easy to create basic application architecture at the begining of development
+
