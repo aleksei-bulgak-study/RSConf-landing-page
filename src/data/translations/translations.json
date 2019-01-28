@@ -16,7 +16,8 @@
     "hometown": "Hometown location",
     "author-works": "Author works",
     "authors-activities": "Author`s activities",
-    "search-placeholder": "search author"
+    "search-placeholder": "search author",
+    "search-placeholder-city": "city"
   },
   "ru": {
     "team_title": "Наша команда",
@@ -35,7 +36,8 @@
     "hometown": "Место проживания",
     "author-works": "Работы автора",
     "authors-activities": "Биография",
-    "search-placeholder": "поиск автора"
+    "search-placeholder": "поиск автора",
+    "search-placeholder-city": "город"
   },
   "by": {
     "team_title": "Наша праектная каманда",
@@ -54,6 +56,7 @@
     "hometown": "Месца жыхарства",
     "author-works": "Працы паэта",
     "authors-activities": "Бияграфiя",
-    "search-placeholder": "шукаць па аутарам"
+    "search-placeholder": "шукаць па аутарам",
+    "search-placeholder-city": "горад"
   }
 }

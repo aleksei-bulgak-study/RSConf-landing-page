@@ -13,21 +13,15 @@ const renderCard = (data) => {
             <li key={address} className="card row">
               <img alt="img" src={titleImage} />
               <div className="row">
-                <Link
-                  className="author-name"
-                  key={firstName + lastName}
-                  to={address}
-                >
-                  { firstName }
+                <Link className="author-name" key={firstName + lastName} to={address}>
+                  {firstName}
                   {' '}
-                  { lastName}
+                  {lastName}
                 </Link>
-
               </div>
             </li>
           );
-        })
-        }
+        })}
       </ul>
     </section>
   );
@@ -36,18 +30,61 @@ const renderCard = (data) => {
 class Search extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { searchRequest: [] };
+    this.state = { searchRequest: []};
+    this.authorsByCity = [];
+    this.authorsByName = [];
   }
 
-  handleChange(event) {
-    const { authorsInfo } = this.props;
-    const inputValue = event.target.value.toLowerCase();
-    if (inputValue.length > 0) {
-      const arr = authorsInfo.filter(({ firstName, lastName }) => firstName.toLowerCase().search(inputValue) >= 0 || lastName.toLowerCase().search(inputValue) >= 0); // eslint-disable-line
-      this.setState({ searchRequest: arr });
-    } else {
-      this.setState({ searchRequest: [] });
+  defineAuthors() {
+    if (!this.authorsByCity.length && this.authorsByName) {
+      this.setState({searchRequest: this.authorsByName});
+    } else if (!this.authorsByName.length && this.authorsByCity.length) {
+      this.setState({searchRequest: this.authorsByCity});
+    } else if (this.authorsByName.length && this.authorsByCity.length) {
+      const searhResult = [];
+      this.authorsByName.forEach(elem=>{
+        if(this.authorsByCity.indexOf(elem) >= 0) {
+          searhResult.push(elem);
+        }
+      })
+      this.setState({searchRequest: searhResult});
     }
+  }
+  
+
+  nameFilter(name) {
+    const { authorsInfo } = this.props;
+    if(name.length > 0) {
+    const arr = authorsInfo.filter(({ firstName, lastName }) => firstName.toLowerCase().search(name) >= 0 || lastName.toLowerCase().search(name) >= 0);
+    this.authorsByName = arr;
+    } else {
+      this.authorsByName = [];
+    }
+    this.defineAuthors();
+  } 
+
+  cityFilter(name) {
+    const { authorsInfo } = this.props;
+    if(name.length > 0) {
+      const arr = authorsInfo.filter(({ locations }) => {
+        const city = locations[0].name.toLowerCase();
+        return city.search(name) >= 0;
+      });
+      this.authorsByCity =  arr;
+    } else {
+      this.authorsByCity =  [];
+    }    
+    this.defineAuthors();
+  }
+
+  handleChangeName(event) {
+    const inputValue = event.target.value.toLowerCase();    
+      this.nameFilter(inputValue);
+  }
+
+  handleChangeCity(event) {
+    const inputValue = event.target.value.toLowerCase();
+    this.cityFilter(inputValue);
   }
 
   render() {
@@ -57,8 +94,13 @@ class Search extends React.Component {
       <div className="container">
         <div className="col">
           <section className="search-shape">
-            <input type="text" placeholder={t('search-placeholder')} onChange={this.handleChange.bind(this)} />
-          </section>
+            <input
+              type="text"
+              placeholder={t('search-placeholder')}
+              onChange={this.handleChangeName.bind(this)}
+            />
+            <input type="text" placeholder={t('search-placeholder-city')} onChange={this.handleChangeCity.bind(this)} />
+          </section>          
           {renderCard(searchRequest)}
         </div>
       </div>
@@ -67,9 +109,7 @@ class Search extends React.Component {
 }
 
 Search.propTypes = {
-  authorsInfo: PropTypes.arrayOf(
-    PropTypes.object,
-  ),
+  authorsInfo: PropTypes.arrayOf(PropTypes.object),
   t: PropTypes.func,
 };
 Search.defaultProps = {
