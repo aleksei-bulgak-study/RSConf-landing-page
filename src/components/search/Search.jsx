@@ -35,11 +35,11 @@ class Search extends React.Component {
     const inputValue = event.target.value.toLowerCase();
     const { authorsInfo } = this.props;
     if (inputValue) {
-      const arr = authorsInfo.filter(({ firstName, lastName, locations }) => {
-        return firstName.toLowerCase().includes(inputValue)
+      const arr = authorsInfo.filter(({ firstName, lastName, locations }) => (
+        firstName.toLowerCase().includes(inputValue)
           || lastName.toLowerCase().includes(inputValue)
-          || locations[0].name.toLowerCase().includes(inputValue);
-      });
+          || locations[0].name.toLowerCase().includes(inputValue)
+      ));
       this.authorsByName = arr;
       this.setState({ searchRequest: arr });
     } else {

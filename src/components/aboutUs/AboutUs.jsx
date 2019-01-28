@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Developer from '../developer/Developer';
-import { DEVELOPERS } from '../../constants/constants';
+import DEVELOPERS from '../../constants/constants';
 import './aboutUs.css';
 
 const AboutUs = ({ t }) => {

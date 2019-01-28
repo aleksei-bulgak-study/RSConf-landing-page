@@ -26,4 +26,4 @@ const DEVELOPERS = [
   },
 ];
 
-export { DEVELOPERS };
+export default DEVELOPERS;

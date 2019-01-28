@@ -23,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src/**/*.jsx && eslint ./src/**/*.js"
   },
   "eslintConfig": {
     "extends": "airbnb",
@@ -31,7 +32,9 @@
       "no-console": "off",
       "no-template-curly-in-string": "off",
       "jsx-a11y/label-has-for": "off",
-      "no-underscore-dangle": "off"
+      "no-underscore-dangle": "off",
+      "jsx-a11y/click-events-have-key-events": "off",
+      "jsx-a11y/no-noninteractive-element-interactions": "off"
     },
     "env": {
       "browser": true,
